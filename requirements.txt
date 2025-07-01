@@ -1,0 +1,4 @@
+dotenv
+huggingface-hub
+llama-cpp-python
+openai

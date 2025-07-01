@@ -1,0 +1,164 @@
+{
+  "scenarios": [
+    {
+      "id": "translation_en_de_001",
+      "name": "Simple Greeting - Easy",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Hello, how are you today?\"",
+      "expected_output": "Hallo, wie geht es dir heute?"
+    },
+    {
+      "id": "translation_en_de_002",
+      "name": "Restaurant Order - Easy",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"I would like to order a coffee and a piece of cake, please.\"",
+      "expected_output": "Ich hätte gerne einen Kaffee und ein Stück Kuchen, bitte."
+    },
+    {
+      "id": "translation_en_de_003",
+      "name": "Weather Description - Medium",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The weather forecast predicts heavy rainfall and thunderstorms throughout the weekend, so we should probably postpone our hiking trip.\"",
+      "expected_output": "Die Wettervorhersage sagt starken Regen und Gewitter für das ganze Wochenende voraus, daher sollten wir unsere Wanderung wahrscheinlich verschieben."
+    },
+    {
+      "id": "translation_en_de_004",
+      "name": "Technology Discussion - Medium",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The latest smartphone features an advanced camera system with artificial intelligence capabilities that can automatically enhance photo quality in various lighting conditions.\"",
+      "expected_output": "Das neueste Smartphone verfügt über ein fortschrittliches Kamerasystem mit künstlicher Intelligenz, das automatisch die Bildqualität bei verschiedenen Lichtverhältnissen verbessern kann."
+    },
+    {
+      "id": "translation_en_de_005",
+      "name": "Academic Text - Hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The interdisciplinary approach to sustainable development requires collaboration between environmental scientists, economists, and policy makers to address the complex challenges of climate change while maintaining economic growth.\"",
+      "expected_output": "Der interdisziplinäre Ansatz zur nachhaltigen Entwicklung erfordert eine Zusammenarbeit zwischen Umweltwissenschaftlern, Ökonomen und Politikern, um die komplexen Herausforderungen des Klimawandels anzugehen und gleichzeitig das Wirtschaftswachstum aufrechtzuerhalten."
+    },
+    {
+      "id": "translation_en_de_006",
+      "name": "Idiomatic Expression - Hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Don't count your chickens before they hatch - we should wait for the official results before celebrating our success.\"",
+      "expected_output": "Man soll den Tag nicht vor dem Abend loben - wir sollten auf die offiziellen Ergebnisse warten, bevor wir unseren Erfolg feiern."
+    },
+    {
+      "id": "translation_en_de_007",
+      "name": "Medical Context - Hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The patient exhibits symptoms of acute bronchitis, including persistent cough, chest tightness, and difficulty breathing, which may require immediate medical intervention.\"",
+      "expected_output": "Der Patient zeigt Symptome einer akuten Bronchitis, einschließlich anhaltendem Husten, Brustenge und Atembeschwerden, was eine sofortige medizinische Behandlung erfordern könnte."
+    },
+    {
+      "id": "translation_en_de_008",
+      "name": "Short Question - Easy",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Where is the nearest train station?\"",
+      "expected_output": "Wo ist der nächste Bahnhof?"
+    },
+    {
+      "id": "translation_en_de_009",
+      "name": "Literary Text - Very Hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The melancholic autumn wind whispered through the golden leaves, carrying with it the bittersweet memories of summer's fleeting embrace, as if nature itself mourned the inevitable passage of time.\"",
+      "expected_output": "Der melancholische Herbstwind flüsterte durch die goldenen Blätter und trug die bittersüßen Erinnerungen an die flüchtige Umarmung des Sommers mit sich, als ob die Natur selbst den unvermeidlichen Lauf der Zeit betrauerte."
+    },
+    {
+      "id": "translation_en_de_010",
+      "name": "Business Context - Medium",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Our quarterly sales report indicates a significant increase in revenue, primarily driven by strong performance in the European markets and successful product launches.\"",
+      "expected_output": "Unser Quartalsumsatzbericht zeigt eine erhebliche Umsatzsteigerung, die hauptsächlich durch starke Leistungen in den europäischen Märkten und erfolgreiche Produkteinführungen vorangetrieben wurde."
+    },
+    {
+      "id": "translation_en_de_011",
+      "name": "Travel Directions - Easy",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Take the second street on the right and continue straight for about 200 meters.\"",
+      "expected_output": "Nehmen Sie die zweite Straße rechts und gehen Sie etwa 200 Meter geradeaus weiter."
+    },
+    {
+      "id": "translation_en_de_012",
+      "name": "Emergency Situation - Medium",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Please call an ambulance immediately! There has been a serious accident and someone needs urgent medical attention.\"",
+      "expected_output": "Bitte rufen Sie sofort einen Krankenwagen! Es gab einen schweren Unfall und jemand braucht dringend medizinische Hilfe."
+    },
+    {
+      "id": "translation_en_de_013",
+      "name": "Scientific Research - Hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The hypothesis postulates that quantum entanglement phenomena could potentially revolutionize information processing capabilities in next-generation computing architectures.\"",
+      "expected_output": "Die Hypothese postuliert, dass Quantenverschränkungsphänomene möglicherweise die Informationsverarbeitungskapazitäten in Computerarchitekturen der nächsten Generation revolutionieren könnten."
+    },
+    {
+      "id": "translation_en_de_014",
+      "name": "Cooking Instructions - Medium",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Preheat the oven to 180 degrees Celsius, mix the ingredients thoroughly, and bake for approximately 25 minutes until golden brown.\"",
+      "expected_output": "Heizen Sie den Ofen auf 180 Grad Celsius vor, vermischen Sie die Zutaten gründlich und backen Sie etwa 25 Minuten, bis alles goldbraun ist."
+    },
+    {
+      "id": "translation_en_de_015",
+      "name": "Legal Document - Very Hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The contracting parties hereby agree to the terms and conditions stipulated herein, whereby any breach of contract shall result in immediate termination and potential legal ramifications.\"",
+      "expected_output": "Die Vertragsparteien stimmen hiermit den hierin festgelegten Bedingungen zu, wobei jeder Vertragsbruch zur sofortigen Kündigung und möglichen rechtlichen Konsequenzen führt."
+    },
+    {
+      "id": "translation_en_de_016",
+      "name": "Sports Commentary - Medium",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The goalkeeper made an incredible save in the final seconds, securing the victory for his team in this thrilling championship match.\"",
+      "expected_output": "Der Torwart machte eine unglaubliche Parade in den letzten Sekunden und sicherte seinem Team den Sieg in diesem packenden Meisterschaftsspiel."
+    },
+    {
+      "id": "translation_en_de_017",
+      "name": "Simple Apology - Easy",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"I'm sorry for being late.\"",
+      "expected_output": "Es tut mir leid, dass ich zu spät bin."
+    },
+    {
+      "id": "translation_en_de_018",
+      "name": "Historical Text - Hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The Industrial Revolution fundamentally transformed society, ushering in an era of unprecedented technological advancement and social change that continues to influence our modern world.\"",
+      "expected_output": "Die Industrielle Revolution veränderte die Gesellschaft grundlegend und leitete eine Ära beispielloser technologischer Fortschritte und sozialer Veränderungen ein, die unsere moderne Welt weiterhin prägt."
+    },
+    {
+      "id": "translation_en_de_019",
+      "name": "Philosophical Quote - Very Hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"The unexamined life is not worth living, for it is through self-reflection and contemplation that we discover our true purpose and meaning in existence.\"",
+      "expected_output": "Das ungeprüfte Leben ist nicht lebenswert, denn durch Selbstreflexion und Kontemplation entdecken wir unseren wahren Zweck und Sinn im Dasein."
+    },
+    {
+      "id": "translation_en_de_020",
+      "name": "Environmental News - Medium",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Renewable energy sources such as solar and wind power are becoming increasingly cost-effective alternatives to traditional fossil fuels in many regions worldwide.\"",
+      "expected_output": "Erneuerbare Energiequellen wie Solar- und Windkraft werden in vielen Regionen weltweit zu immer kostengünstigeren Alternativen zu herkömmlichen fossilen Brennstoffen."
+    }
+  ]
+}

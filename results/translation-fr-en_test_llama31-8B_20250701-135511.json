@@ -1,0 +1,421 @@
+{
+  "model_type": "llama31-8B",
+  "scenario_type": "translation-fr-en",
+  "timestamp": "20250701-135511",
+  "test_type": "translation-fr-en",
+  "language": "fr",
+  "results": [
+    {
+      "scenario_id": "translation_fr_en_001",
+      "scenario_name": "Simple Greeting - Easy",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Bonjour, comment allez-vous aujourd'hui ?\"",
+      "response": "How are you today?",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.568,
+        "tokens_per_second": 3.19,
+        "time_to_first_token_seconds": 0.157,
+        "prompt_tokens": 71,
+        "completion_tokens": 5,
+        "total_tokens": 76,
+        "response_length_chars": 18,
+        "response_length_words": 4,
+        "chars_per_second": 11.48,
+        "words_per_second": 2.55
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_002",
+      "scenario_name": "Restaurant Order - Easy",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Je voudrais commander un café et un morceau de gâteau, s'il vous plaît.\"",
+      "response": "\"I would like to order a coffee and a slice of cake, please.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.689,
+        "tokens_per_second": 4.07,
+        "time_to_first_token_seconds": 0.369,
+        "prompt_tokens": 84,
+        "completion_tokens": 15,
+        "total_tokens": 99,
+        "response_length_chars": 61,
+        "response_length_words": 13,
+        "chars_per_second": 16.54,
+        "words_per_second": 3.52
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_003",
+      "scenario_name": "Weather Description - Medium",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Les prévisions météorologiques annoncent de fortes pluies et des orages tout le week-end, nous devrions donc probablement reporter notre randonnée.\"",
+      "response": "\"The weather forecast is predicting heavy rain and thunderstorms for the entire weekend, so we should probably postpone our hike.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.649,
+        "tokens_per_second": 6.3,
+        "time_to_first_token_seconds": 0.365,
+        "prompt_tokens": 98,
+        "completion_tokens": 23,
+        "total_tokens": 121,
+        "response_length_chars": 130,
+        "response_length_words": 20,
+        "chars_per_second": 35.63,
+        "words_per_second": 5.48
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_004",
+      "scenario_name": "Technology Discussion - Medium",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Le dernier smartphone propose un système de caméra avancé avec des capacités d'intelligence artificielle qui peut automatiquement améliorer la qualité des photos dans diverses conditions d'éclairage.\"",
+      "response": "The latest smartphone offers an advanced camera system with artificial intelligence capabilities that can automatically enhance the quality of photos in various lighting conditions.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.84,
+        "tokens_per_second": 6.51,
+        "time_to_first_token_seconds": 0.384,
+        "prompt_tokens": 104,
+        "completion_tokens": 25,
+        "total_tokens": 129,
+        "response_length_chars": 181,
+        "response_length_words": 24,
+        "chars_per_second": 47.13,
+        "words_per_second": 6.25
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_005",
+      "scenario_name": "Academic Text - Hard",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"L'approche interdisciplinaire du développement durable nécessite une collaboration entre les scientifiques environnementaux, les économistes et les décideurs politiques pour relever les défis complexes du changement climatique tout en maintenant la croissance économique.\"",
+      "response": "\"An interdisciplinary approach to sustainable development requires collaboration between environmental scientists, economists, and policymakers to tackle the complex challenges of climate change while maintaining economic growth.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.598,
+        "tokens_per_second": 6.53,
+        "time_to_first_token_seconds": 0.46,
+        "prompt_tokens": 117,
+        "completion_tokens": 30,
+        "total_tokens": 147,
+        "response_length_chars": 230,
+        "response_length_words": 26,
+        "chars_per_second": 50.03,
+        "words_per_second": 5.66
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_006",
+      "scenario_name": "Idiomatic Expression - Hard",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Il ne faut pas vendre la peau de l'ours avant de l'avoir tué - nous devrions attendre les résultats officiels avant de célébrer notre succès.\"",
+      "response": "\"You shouldn't sell the bear's skin before killing the bear - we should wait for the official results before celebrating our success.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.735,
+        "tokens_per_second": 6.69,
+        "time_to_first_token_seconds": 0.374,
+        "prompt_tokens": 102,
+        "completion_tokens": 25,
+        "total_tokens": 127,
+        "response_length_chars": 134,
+        "response_length_words": 22,
+        "chars_per_second": 35.88,
+        "words_per_second": 5.89
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_007",
+      "scenario_name": "Medical Context - Hard",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Le patient présente des symptômes de bronchite aiguë, notamment une toux persistante, une oppression thoracique et des difficultés respiratoires, qui peuvent nécessiter une intervention médicale immédiate.\"",
+      "response": "The patient presents symptoms of acute bronchitis, including persistent cough, chest tightness, and respiratory difficulties, which may require immediate medical intervention.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.418,
+        "tokens_per_second": 6.56,
+        "time_to_first_token_seconds": 0.442,
+        "prompt_tokens": 110,
+        "completion_tokens": 29,
+        "total_tokens": 139,
+        "response_length_chars": 175,
+        "response_length_words": 21,
+        "chars_per_second": 39.61,
+        "words_per_second": 4.75
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_008",
+      "scenario_name": "Short Question - Easy",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Où se trouve la gare la plus proche ?\"",
+      "response": "Where is the nearest train station?",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 2.2,
+        "tokens_per_second": 3.18,
+        "time_to_first_token_seconds": 0.22,
+        "prompt_tokens": 74,
+        "completion_tokens": 7,
+        "total_tokens": 81,
+        "response_length_chars": 35,
+        "response_length_words": 6,
+        "chars_per_second": 15.91,
+        "words_per_second": 2.73
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_009",
+      "scenario_name": "Literary Text - Very Hard",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Le vent d'automne mélancolique murmurait à travers les feuilles dorées, portant avec lui les souvenirs doux-amers de l'étreinte fugace de l'été, comme si la nature elle-même pleurait l'inévitable passage du temps.\"",
+      "response": "The melancholic autumn wind whispered through the golden leaves, carrying with it the bittersweet memories of the fleeting summer's embrace, as if nature itself was mourning the inevitable passage of time.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 5.496,
+        "tokens_per_second": 6.91,
+        "time_to_first_token_seconds": 0.55,
+        "prompt_tokens": 124,
+        "completion_tokens": 38,
+        "total_tokens": 162,
+        "response_length_chars": 205,
+        "response_length_words": 31,
+        "chars_per_second": 37.3,
+        "words_per_second": 5.64
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_010",
+      "scenario_name": "Business Context - Medium",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Notre rapport de ventes trimestriel indique une augmentation significative des revenus, principalement motivée par de solides performances sur les marchés européens et des lancements de produits réussis.\"",
+      "response": "\"Our quarterly sales report indicates a significant increase in revenue, primarily driven by strong performances on European markets and successful product launches.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.708,
+        "tokens_per_second": 6.47,
+        "time_to_first_token_seconds": 0.371,
+        "prompt_tokens": 103,
+        "completion_tokens": 24,
+        "total_tokens": 127,
+        "response_length_chars": 166,
+        "response_length_words": 22,
+        "chars_per_second": 44.77,
+        "words_per_second": 5.93
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_011",
+      "scenario_name": "Travel Directions - Easy",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Prenez la deuxième rue à droite et continuez tout droit pendant environ 200 mètres.\"",
+      "response": "\"Take the second street to the right and continue straight for approximately 200 meters.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.165,
+        "tokens_per_second": 4.08,
+        "time_to_first_token_seconds": 0.417,
+        "prompt_tokens": 82,
+        "completion_tokens": 17,
+        "total_tokens": 99,
+        "response_length_chars": 89,
+        "response_length_words": 14,
+        "chars_per_second": 21.37,
+        "words_per_second": 3.36
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_012",
+      "scenario_name": "Emergency Situation - Medium",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Appelez une ambulance immédiatement ! Il y a eu un accident grave et quelqu'un a besoin de soins médicaux urgents.\"",
+      "response": "\"Call an ambulance immediately! There has been a serious accident and someone needs urgent medical attention.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.153,
+        "tokens_per_second": 6.03,
+        "time_to_first_token_seconds": 0.315,
+        "prompt_tokens": 92,
+        "completion_tokens": 19,
+        "total_tokens": 111,
+        "response_length_chars": 110,
+        "response_length_words": 16,
+        "chars_per_second": 34.89,
+        "words_per_second": 5.07
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_013",
+      "scenario_name": "Scientific Research - Hard",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"L'hypothèse postule que les phénomènes d'intrication quantique pourraient potentiellement révolutionner les capacités de traitement de l'information dans les architectures informatiques de nouvelle génération.\"",
+      "response": "\"The hypothesis posits that quantum entanglement phenomena could potentially revolutionize the information processing capabilities in next-generation computer architectures.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.116,
+        "tokens_per_second": 5.83,
+        "time_to_first_token_seconds": 0.412,
+        "prompt_tokens": 109,
+        "completion_tokens": 24,
+        "total_tokens": 133,
+        "response_length_chars": 174,
+        "response_length_words": 18,
+        "chars_per_second": 42.28,
+        "words_per_second": 4.37
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_014",
+      "scenario_name": "Cooking Instructions - Medium",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Préchauffez le four à 180 degrés Celsius, mélangez soigneusement les ingrédients et faites cuire pendant environ 25 minutes jusqu'à ce que ce soit doré.\"",
+      "response": "\"Preheat the oven to 180 degrees Celsius, mix the ingredients carefully and cook for approximately 25 minutes until golden brown.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.954,
+        "tokens_per_second": 6.58,
+        "time_to_first_token_seconds": 0.395,
+        "prompt_tokens": 106,
+        "completion_tokens": 26,
+        "total_tokens": 132,
+        "response_length_chars": 130,
+        "response_length_words": 20,
+        "chars_per_second": 32.88,
+        "words_per_second": 5.06
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_015",
+      "scenario_name": "Legal Document - Very Hard",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Les parties contractantes conviennent par les présentes des termes et conditions stipulés dans le présent document, tout manquement au contrat entraînant une résiliation immédiate et d'éventuelles ramifications juridiques.\"",
+      "response": "The contracting parties agree to the terms and conditions set forth in the present document, any failure to comply with the contract resulting in immediate termination and possible legal repercussions.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.947,
+        "tokens_per_second": 6.47,
+        "time_to_first_token_seconds": 0.495,
+        "prompt_tokens": 110,
+        "completion_tokens": 32,
+        "total_tokens": 142,
+        "response_length_chars": 201,
+        "response_length_words": 30,
+        "chars_per_second": 40.63,
+        "words_per_second": 6.06
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_016",
+      "scenario_name": "Sports Commentary - Medium",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Le gardien de but a réalisé un arrêt incroyable dans les dernières secondes, assurant la victoire de son équipe dans ce match de championnat palpitant.\"",
+      "response": "The goalkeeper made an incredible stop in the final seconds, securing a win for his team in this thrilling championship match.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.434,
+        "tokens_per_second": 6.7,
+        "time_to_first_token_seconds": 0.343,
+        "prompt_tokens": 102,
+        "completion_tokens": 23,
+        "total_tokens": 125,
+        "response_length_chars": 126,
+        "response_length_words": 21,
+        "chars_per_second": 36.69,
+        "words_per_second": 6.12
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_017",
+      "scenario_name": "Simple Apology - Easy",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Je suis désolé d'être en retard.\"",
+      "response": "\"I'm sorry I'm late.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.917,
+        "tokens_per_second": 3.65,
+        "time_to_first_token_seconds": 0.192,
+        "prompt_tokens": 71,
+        "completion_tokens": 7,
+        "total_tokens": 78,
+        "response_length_chars": 21,
+        "response_length_words": 4,
+        "chars_per_second": 10.95,
+        "words_per_second": 2.09
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_018",
+      "scenario_name": "Historical Text - Hard",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"La Révolution industrielle a fondamentalement transformé la société, inaugurant une ère de progrès technologique et de changement social sans précédent qui continue d'influencer notre monde moderne.\"",
+      "response": "The Industrial Revolution fundamentally transformed society, inaugurating an era of unprecedented technological progress and social change that continues to influence our modern world.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.874,
+        "tokens_per_second": 6.71,
+        "time_to_first_token_seconds": 0.387,
+        "prompt_tokens": 105,
+        "completion_tokens": 26,
+        "total_tokens": 131,
+        "response_length_chars": 184,
+        "response_length_words": 23,
+        "chars_per_second": 47.49,
+        "words_per_second": 5.94
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_019",
+      "scenario_name": "Philosophical Quote - Very Hard",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"La vie non examinée ne vaut pas la peine d'être vécue, car c'est à travers l'auto-réflexion et la contemplation que nous découvrons notre véritable but et sens dans l'existence.\"",
+      "response": "\"Un unexamined life is not worth living, for it is through self-reflection and contemplation that we discover our true purpose and meaning in existence.\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.81,
+        "tokens_per_second": 6.65,
+        "time_to_first_token_seconds": 0.481,
+        "prompt_tokens": 112,
+        "completion_tokens": 32,
+        "total_tokens": 144,
+        "response_length_chars": 153,
+        "response_length_words": 24,
+        "chars_per_second": 31.81,
+        "words_per_second": 4.99
+      }
+    },
+    {
+      "scenario_id": "translation_fr_en_020",
+      "scenario_name": "Environmental News - Medium",
+      "prompt": "Source language: French\nTarget language: English\nText to translate: \"Les sources d'énergie renouvelable comme l'énergie solaire et éolienne deviennent des alternatives de plus en plus rentables aux combustibles fossiles traditionnels dans de nombreuses régions du monde.\"",
+      "response": "Renewable energy sources such as solar and wind energy are becoming increasingly cost-effective alternatives to traditional fossil fuels in many parts of the world.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.311,
+        "tokens_per_second": 6.5,
+        "time_to_first_token_seconds": 0.431,
+        "prompt_tokens": 107,
+        "completion_tokens": 28,
+        "total_tokens": 135,
+        "response_length_chars": 164,
+        "response_length_words": 24,
+        "chars_per_second": 38.05,
+        "words_per_second": 5.57
+      }
+    }
+  ],
+  "source_language": "fr",
+  "target_language": "en",
+  "performance_summary": {
+    "model_download_time_seconds": 0.161,
+    "model_load_time_seconds": 1.267,
+    "total_test_time_seconds": 75.589,
+    "total_scenarios_tested": 20,
+    "average_generation_time_seconds": 3.779,
+    "average_tokens_per_second": 5.78,
+    "total_tokens_generated": 2438,
+    "total_generation_time_seconds": 75.582
+  }
+}

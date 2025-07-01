@@ -1,0 +1,229 @@
+{
+  "model_type": "qwen3-8B",
+  "scenario_type": "topic-detection-fr",
+  "timestamp": "20250701-144652",
+  "test_type": "topic-detection-fr",
+  "language": "fr",
+  "results": [
+    {
+      "scenario_id": "topic_detection_fr_001",
+      "scenario_name": "Classification Simple Sports vs Nourriture - Easy",
+      "prompt": "Sujets disponibles : [\"parler de sport\", \"commander de la nourriture\", \"discuter météo\", \"demander directions\"]\n\nPhrase : \"Je voudrais une grande pizza au pepperoni avec du fromage supplémentaire, s'il vous plaît.\"",
+      "response": "{\"topic\": \"commander de la nourriture\", \"confidence\": 95}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.711,
+        "tokens_per_second": 4.88,
+        "time_to_first_token_seconds": 0.471,
+        "prompt_tokens": 240,
+        "completion_tokens": 23,
+        "total_tokens": 263,
+        "response_length_chars": 57,
+        "response_length_words": 7,
+        "chars_per_second": 12.1,
+        "words_per_second": 1.49
+      },
+      "expected_output": "{\"topic\": \"commander de la nourriture\", \"confidence\": 95}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_002",
+      "scenario_name": "Sous-catégories Technologie - Hard",
+      "prompt": "Sujets disponibles : [\"développement logiciel\", \"dépannage matériel\", \"configuration réseau\", \"optimisation base de données\", \"préoccupations cybersécurité\", \"conception app mobile\", \"informatique cloud\", \"intelligence artificielle\"]\n\nPhrase : \"Le modèle d'apprentissage automatique fait du surapprentissage sur les données d'entraînement et montre une mauvaise généralisation.\"",
+      "response": "{\"topic\": \"intelligence artificielle\", \"confidence\": 95}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.202,
+        "tokens_per_second": 5.0,
+        "time_to_first_token_seconds": 0.42,
+        "prompt_tokens": 279,
+        "completion_tokens": 21,
+        "total_tokens": 300,
+        "response_length_chars": 56,
+        "response_length_words": 5,
+        "chars_per_second": 13.33,
+        "words_per_second": 1.19
+      },
+      "expected_output": "{\"topic\": \"intelligence artificielle\", \"confidence\": 90}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_003",
+      "scenario_name": "Spécialités Médicales - Very Hard",
+      "prompt": "Sujets disponibles : [\"cardiologie\", \"neurologie\", \"orthopédie\", \"dermatologie\", \"gastroentérologie\", \"endocrinologie\", \"pneumologie\", \"rhumatologie\", \"oncologie\", \"psychiatrie\"]\n\nPhrase : \"Le patient éprouve des battements cardiaques irréguliers et une oppression thoracique après avoir monté les escaliers.\"",
+      "response": "{\"topic\": \"cardiologie\", \"confidence\": 95}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.397,
+        "tokens_per_second": 4.32,
+        "time_to_first_token_seconds": 0.44,
+        "prompt_tokens": 278,
+        "completion_tokens": 19,
+        "total_tokens": 297,
+        "response_length_chars": 42,
+        "response_length_words": 4,
+        "chars_per_second": 9.55,
+        "words_per_second": 0.91
+      },
+      "expected_output": "{\"topic\": \"cardiologie\", \"confidence\": 85}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_004",
+      "scenario_name": "Intentions Service Client - Medium",
+      "prompt": "Sujets disponibles : [\"demande facturation\", \"support technique\", \"plainte produit\", \"demande remboursement\", \"annulation compte\", \"demande fonctionnalité\"]\n\nPhrase : \"J'ai été facturé deux fois pour mon abonnement ce mois-ci et j'ai besoin qu'un de ces frais soit annulé.\"",
+      "response": "{\"topic\": \"demande remboursement\", \"confidence\": 90}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.919,
+        "tokens_per_second": 4.47,
+        "time_to_first_token_seconds": 0.492,
+        "prompt_tokens": 254,
+        "completion_tokens": 22,
+        "total_tokens": 276,
+        "response_length_chars": 52,
+        "response_length_words": 5,
+        "chars_per_second": 10.57,
+        "words_per_second": 1.02
+      },
+      "expected_output": "{\"topic\": \"demande facturation\", \"confidence\": 88}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_005",
+      "scenario_name": "Matières Académiques - Easy",
+      "prompt": "Sujets disponibles : [\"mathématiques\", \"littérature\", \"biologie\", \"histoire\", \"physique\", \"chimie\"]\n\nPhrase : \"L'utilisation du pentamètre iambique par Shakespeare dans ses sonnets démontre sa maîtrise de la forme poétique.\"",
+      "response": "{\"topic\": \"littérature\", \"confidence\": 95}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.762,
+        "tokens_per_second": 4.2,
+        "time_to_first_token_seconds": 0.476,
+        "prompt_tokens": 246,
+        "completion_tokens": 20,
+        "total_tokens": 266,
+        "response_length_chars": 42,
+        "response_length_words": 4,
+        "chars_per_second": 8.82,
+        "words_per_second": 0.84
+      },
+      "expected_output": "{\"topic\": \"littérature\", \"confidence\": 98}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_006",
+      "scenario_name": "Services Financiers - Hard",
+      "prompt": "Sujets disponibles : [\"conseil investissement\", \"demande prêt\", \"réclamations assurance\", \"planification retraite\", \"consultation fiscale\", \"refinancement hypothèque\", \"demande score crédit\", \"signalement fraude\", \"ouverture compte\", \"change devise\"]\n\nPhrase : \"J'ai besoin d'aide pour déterminer la répartition optimale des actifs pour mon plan de retraite étant donné qu'il me reste 15 ans avant la retraite.\"",
+      "response": "{\"topic\": \"planification retraite\", \"confidence\": 95}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.509,
+        "tokens_per_second": 4.66,
+        "time_to_first_token_seconds": 0.451,
+        "prompt_tokens": 292,
+        "completion_tokens": 21,
+        "total_tokens": 313,
+        "response_length_chars": 53,
+        "response_length_words": 5,
+        "chars_per_second": 11.75,
+        "words_per_second": 1.11
+      },
+      "expected_output": "{\"topic\": \"planification retraite\", \"confidence\": 92}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_007",
+      "scenario_name": "Voyage - Medium",
+      "prompt": "Sujets disponibles : [\"réservation vol\", \"réservation hôtel\", \"location voiture\", \"assurance voyage\", \"exigences visa\", \"attractions locales\", \"recommandations restaurants\", \"infos transport\"]\n\nPhrase : \"Quels documents ai-je besoin pour entrer au Japon en tant que touriste pendant deux semaines ?\"",
+      "response": "{\"topic\": \"exigences visa\", \"confidence\": 95}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.288,
+        "tokens_per_second": 4.66,
+        "time_to_first_token_seconds": 0.429,
+        "prompt_tokens": 255,
+        "completion_tokens": 20,
+        "total_tokens": 275,
+        "response_length_chars": 45,
+        "response_length_words": 5,
+        "chars_per_second": 10.49,
+        "words_per_second": 1.17
+      },
+      "expected_output": "{\"topic\": \"exigences visa\", \"confidence\": 94}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_008",
+      "scenario_name": "Actions E-commerce - Very Hard",
+      "prompt": "Sujets disponibles : [\"recherche produit\", \"ajouter panier\", \"processus commande\", \"méthode paiement\", \"demande livraison\", \"suivi commande\", \"politique retour\", \"comparaison prix\", \"avis produits\", \"gestion liste souhaits\", \"application coupon\", \"vérification stock\"]\n\nPhrase : \"Je veux voir ce que les autres clients ont pensé de cet ordinateur portable avant de décider de l'acheter.\"",
+      "response": "{\"topic\": \"avis produits\", \"confidence\": 95}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.65,
+        "tokens_per_second": 4.93,
+        "time_to_first_token_seconds": 0.365,
+        "prompt_tokens": 283,
+        "completion_tokens": 18,
+        "total_tokens": 301,
+        "response_length_chars": 44,
+        "response_length_words": 5,
+        "chars_per_second": 12.06,
+        "words_per_second": 1.37
+      },
+      "expected_output": "{\"topic\": \"avis produits\", \"confidence\": 87}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_009",
+      "scenario_name": "États Émotionnels - Hard",
+      "prompt": "Sujets disponibles : [\"exprimer joie\", \"montrer frustration\", \"se sentir anxieux\", \"être confus\", \"démontrer colère\", \"montrer tristesse\", \"exprimer excitation\", \"se sentir submergé\"]\n\nPhrase : \"Je continue de revoir les instructions mais je ne comprends toujours pas comment cela est censé fonctionner.\"",
+      "response": "{\"topic\": \"être confus\", \"confidence\": 90}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.904,
+        "tokens_per_second": 4.87,
+        "time_to_first_token_seconds": 0.39,
+        "prompt_tokens": 262,
+        "completion_tokens": 19,
+        "total_tokens": 281,
+        "response_length_chars": 42,
+        "response_length_words": 5,
+        "chars_per_second": 10.76,
+        "words_per_second": 1.28
+      },
+      "expected_output": "{\"topic\": \"être confus\", \"confidence\": 78}"
+    },
+    {
+      "scenario_id": "topic_detection_fr_010",
+      "scenario_name": "Entretien Maison - Medium",
+      "prompt": "Sujets disponibles : [\"problèmes plomberie\", \"problèmes électriques\", \"chauffage et climatisation\", \"contrôle nuisibles\", \"aide jardinage\", \"réparation appareils\", \"peinture et décoration\", \"systèmes sécurité\", \"entretien toit\", \"installation revêtement sol\"]\n\nPhrase : \"Le robinet de ma cuisine coule constamment depuis une semaine et cela me rend fou.\"",
+      "response": "{\"topic\": \"problèmes plomberie\", \"confidence\": 95}",
+      "personality": "Vous êtes un système de classification de sujets. Étant donné une liste de sujets disponibles et une phrase, vous devez identifier quel sujet correspond le mieux à la phrase. Retournez votre réponse au format JSON avec deux clés : 'topic' (la chaîne exacte du sujet de la liste ou 'None' si aucune correspondance) et 'confidence' (un nombre de 0 à 100 indiquant votre degré de certitude, où 100 est complètement certain et 0 complètement incertain). Le format de sortie doit être comme ceci en format JSON : {\"topic\": \"{sujet détecté}\", \"confidence\": {score de confiance}}. Répondez uniquement avec la réponse JSON et rien d'autre.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.76,
+        "tokens_per_second": 4.83,
+        "time_to_first_token_seconds": 0.476,
+        "prompt_tokens": 280,
+        "completion_tokens": 23,
+        "total_tokens": 303,
+        "response_length_chars": 50,
+        "response_length_words": 5,
+        "chars_per_second": 10.5,
+        "words_per_second": 1.05
+      },
+      "expected_output": "{\"topic\": \"problèmes plomberie\", \"confidence\": 96}"
+    }
+  ],
+  "performance_summary": {
+    "model_download_time_seconds": 0.369,
+    "model_load_time_seconds": 1.059,
+    "total_test_time_seconds": 44.106,
+    "total_scenarios_tested": 10,
+    "average_generation_time_seconds": 4.41,
+    "average_tokens_per_second": 4.68,
+    "total_tokens_generated": 2875,
+    "total_generation_time_seconds": 44.102
+  }
+}
