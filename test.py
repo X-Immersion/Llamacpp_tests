@@ -22,10 +22,10 @@ load_dotenv()
 
 # Test configuration - change these to switch between models and scenario types
 MODEL_TYPE = "llama32-3B"  # Options: ['gemma3-12B', 'llama31-8B', 'qwen3-8B'] + ['all']
-SCENARIO_TYPE = "translation-en-de"  # Options: "roleplay-{language}", "topic-detection-{language}", "translation-{origin-language}-{language}", "all"
+SCENARIO_TYPE = "topic-detection-en"  # Options: "roleplay-{language}", "topic-detection-{language}", "translation-{origin-language}-{language}", "all"
 
 # Quick test mode - set to True for quick testing with fewer scenarios
-QUICK_TEST = True  # Set to False for full testing
+QUICK_TEST = False  # Set to False for full testing
 
 # Config
 MAX_TOKENS = 80
@@ -519,7 +519,7 @@ def run_single_test(model_type, scenario_type):
         download_time = time.time() - download_start
         
         # Initialize the local model
-        model_path = f"/home/deguodedongxi/research/llamacpp_test/{model_config['local_dir']}/{model_config['model_file']}"
+        model_path = f"./{model_config['local_dir']}/{model_config['model_file']}"
         print(f"Loading model from: {model_path}")
         
         model_load_start = time.time()
