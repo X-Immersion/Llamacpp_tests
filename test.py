@@ -22,10 +22,10 @@ load_dotenv()
 
 # Test configuration - change these to switch between models and scenario types
 MODEL_TYPE = "llama32-3B"  # Options: ['gemma3-12B', 'llama31-8B', 'qwen3-8B'] + ['all']
-SCENARIO_TYPE = "topic-detection-en"  # Options: "roleplay-{language}", "topic-detection-{language}", "translation-{origin-language}-{language}", "all"
+SCENARIO_TYPE = "translation-en-de"  # Options: "roleplay-{language}", "topic-detection-{language}", "translation-{origin-language}-{language}", "all"
 
 # Quick test mode - set to True for quick testing with fewer scenarios
-QUICK_TEST = False  # Set to False for full testing
+QUICK_TEST = True  # Set to False for full testing
 
 # Config
 MAX_TOKENS = 80

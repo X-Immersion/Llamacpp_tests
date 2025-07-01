@@ -159,6 +159,186 @@
       "conversation_history": [],
       "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Erneuerbare Energiequellen wie Solar- und Windkraft werden in vielen Regionen weltweit zu immer kostengünstigeren Alternativen zu herkömmlichen fossilen Brennstoffen.\"",
       "expected_output": "Renewable energy sources such as solar and wind power are becoming increasingly cost-effective alternatives to traditional fossil fuels in many regions worldwide."
+    },
+    {
+      "id": "translation_de_en_021",
+      "name": "German Idiom - Das ist nicht das Gelbe vom Ei - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Die neue Lösung ist nicht das Gelbe vom Ei, aber sie ist besser als das, was wir vorher hatten.\"",
+      "expected_output": "The new solution isn't perfect (or isn't the best), but it's better than what we had before."
+    },
+    {
+      "id": "translation_de_en_022",
+      "name": "German Idiom - Jemandem einen Bären aufbinden - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Du willst mir doch wohl keinen Bären aufbinden! Das kann ich kaum glauben.\"",
+      "expected_output": "You're not trying to pull my leg, are you! I can hardly believe that."
+    },
+    {
+      "id": "translation_de_en_023",
+      "name": "German Wordplay - Verschlimmbessern - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Mit seinem Eingriff hat er die Situation nur verschlimmbessert.\"",
+      "expected_output": "With his intervention, he only made things worse while trying to improve them."
+    },
+    {
+      "id": "translation_de_en_024",
+      "name": "German Slang - Das ist mir Wurst - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Welches Restaurant wir wählen, ist mir völlig Wurst. Hauptsache, das Essen schmeckt.\"",
+      "expected_output": "Which restaurant we choose is completely irrelevant to me. As long as the food tastes good."
+    },
+    {
+      "id": "translation_de_en_025",
+      "name": "German Cultural Reference - Ostalgie - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Seine Ostalgie zeigt sich in der Sammlung von DDR-Memorabilia und dem Schwärmen für die 'guten alten Zeiten'.\"",
+      "expected_output": "His nostalgia for East Germany shows in his collection of GDR memorabilia and his romanticizing of the 'good old days'."
+    },
+    {
+      "id": "translation_de_en_026",
+      "name": "German Idiom - Tomaten auf den Augen haben - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Hast du Tomaten auf den Augen? Der Schlüssel liegt direkt vor dir auf dem Tisch!\"",
+      "expected_output": "Are you blind? The key is right there in front of you on the table!"
+    },
+    {
+      "id": "translation_de_en_027",
+      "name": "German Compound Word - Verschlimmbesserer - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Er ist ein klassischer Verschlimmbesserer - jedes Mal, wenn er helfen will, macht er alles nur noch schlimmer.\"",
+      "expected_output": "He's a classic person who makes things worse while trying to improve them - every time he wants to help, he just makes everything worse."
+    },
+    {
+      "id": "translation_de_en_028",
+      "name": "German Idiom - Ins Gras beißen - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Der alte Computer hat endlich ins Gras gebissen. Zeit für einen neuen!\"",
+      "expected_output": "The old computer has finally kicked the bucket. Time for a new one!"
+    },
+    {
+      "id": "translation_de_en_029",
+      "name": "German Regional Expression - Moin - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Moin! Wie läuft's denn so bei dir?\"",
+      "expected_output": "Hi there! How are things going for you?"
+    },
+    {
+      "id": "translation_de_en_030",
+      "name": "German Idiom - Auf dem Holzweg sein - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Wenn du denkst, dass diese Strategie funktioniert, bist du auf dem Holzweg.\"",
+      "expected_output": "If you think this strategy will work, you're barking up the wrong tree."
+    },
+    {
+      "id": "translation_de_en_031",
+      "name": "German Complex Compound - Verschlimmbessrerungssucht - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Seine Verschlimmbessrerungssucht macht ihn zu einem schwierigen Teamkollegen.\"",
+      "expected_output": "His compulsion to make things worse while trying to improve them makes him a difficult teammate."
+    },
+    {
+      "id": "translation_de_en_032",
+      "name": "German Idiom - Schwein haben - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Du hast aber Schwein gehabt! Ohne den Regenschirm wärst du klatschnass geworden.\"",
+      "expected_output": "You were really lucky! Without the umbrella you would have gotten soaking wet."
+    },
+    {
+      "id": "translation_de_en_033",
+      "name": "German Ironic Expression - Das ist ja toll - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Mein Auto ist kaputt, es regnet und ich habe meinen Schlüssel verloren. Das ist ja toll!\"",
+      "expected_output": "My car is broken, it's raining and I lost my key. That's just great!"
+    },
+    {
+      "id": "translation_de_en_034",
+      "name": "German Idiom - Den Nagel auf den Kopf treffen - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Mit deiner Analyse hast du den Nagel auf den Kopf getroffen!\"",
+      "expected_output": "With your analysis, you hit the nail on the head!"
+    },
+    {
+      "id": "translation_de_en_035",
+      "name": "German Technical Humor - Handy vs Phone - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Kannst du mir mal dein Handy leihen? Meins ist im Eimer.\"",
+      "expected_output": "Can you lend me your cell phone? Mine is broken."
+    },
+    {
+      "id": "translation_de_en_036",
+      "name": "German Idiom - Im Eimer sein - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Nach dem Skandal war seine politische Karriere im Eimer.\"",
+      "expected_output": "After the scandal, his political career was down the drain."
+    },
+    {
+      "id": "translation_de_en_037",
+      "name": "German Bureaucratic Humor - Verschlimmbessrungsreflex - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Die Verwaltung zeigt wieder ihren typischen Verschlimmbessrungsreflex bei der neuen Verordnung.\"",
+      "expected_output": "The administration is again showing its typical reflex to make things worse while trying to improve them with the new regulation."
+    },
+    {
+      "id": "translation_de_en_038",
+      "name": "German Idiom - Kalte Füße bekommen - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Kurz vor der Präsentation bekam er kalte Füße und sagte den Termin ab.\"",
+      "expected_output": "Shortly before the presentation, he got cold feet and canceled the appointment."
+    },
+    {
+      "id": "translation_de_en_039",
+      "name": "German Sarcastic Diminutive - Problemchen - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Wir haben da ein kleines Problemchen - die gesamte Datenbank ist gelöscht worden.\"",
+      "expected_output": "We have a little problem here - the entire database has been deleted."
+    },
+    {
+      "id": "translation_de_en_040",
+      "name": "German Idiom - Aus einer Mücke einen Elefanten machen - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: German\nTarget language: English\nText to translate: \"Du machst wieder aus einer Mücke einen Elefanten! Es war nur ein kleiner Fehler.\"",
+      "expected_output": "You're making a mountain out of a molehill again! It was just a small mistake."
     }
   ]
 }

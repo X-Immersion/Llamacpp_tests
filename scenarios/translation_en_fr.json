@@ -159,6 +159,186 @@
       "conversation_history": [],
       "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"Renewable energy sources such as solar and wind power are becoming increasingly cost-effective alternatives to traditional fossil fuels in many regions worldwide.\"",
       "expected_output": "Les sources d'énergie renouvelable comme l'énergie solaire et éolienne deviennent des alternatives de plus en plus rentables aux combustibles fossiles traditionnels dans de nombreuses régions du monde."
+    },
+    {
+      "id": "translation_en_fr_021",
+      "name": "English Idiom - Break a leg - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"You have your big interview today? Break a leg!\"",
+      "expected_output": "Tu as ton gros entretien aujourd'hui ? Merde !"
+    },
+    {
+      "id": "translation_en_fr_022",
+      "name": "English Idiom - Spill the beans - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"Come on, spill the beans! What really happened at the party?\"",
+      "expected_output": "Allez, vide ton sac ! Qu'est-ce qui s'est vraiment passé à la fête ?"
+    },
+    {
+      "id": "translation_en_fr_023",
+      "name": "English Sarcasm - That's just perfect - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"My phone died, I missed my train, and now it's raining. That's just perfect!\"",
+      "expected_output": "Mon téléphone est mort, j'ai raté mon train, et maintenant il pleut. C'est parfait !"
+    },
+    {
+      "id": "translation_en_fr_024",
+      "name": "English Idiom - Piece of cake - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"Don't worry about the test, it'll be a piece of cake!\"",
+      "expected_output": "Ne t'inquiète pas pour l'examen, ce sera du gâteau !"
+    },
+    {
+      "id": "translation_en_fr_025",
+      "name": "English Idiom - Hit the nail on the head - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"Your analysis really hit the nail on the head!\"",
+      "expected_output": "Ton analyse a vraiment mis dans le mille !"
+    },
+    {
+      "id": "translation_en_fr_026",
+      "name": "English Idiom - Barking up the wrong tree - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"If you think I'm the one who broke it, you're barking up the wrong tree.\"",
+      "expected_output": "Si tu penses que c'est moi qui l'ai cassé, tu fais fausse route."
+    },
+    {
+      "id": "translation_en_fr_027",
+      "name": "English Slang - Ghosting - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"After our date, she just started ghosting me completely.\"",
+      "expected_output": "Après notre rendez-vous, elle a commencé à me faire le silence radio complètement."
+    },
+    {
+      "id": "translation_en_fr_028",
+      "name": "English Idiom - Cold feet - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"He got cold feet right before signing the contract.\"",
+      "expected_output": "Il a eu la trouille juste avant de signer le contrat."
+    },
+    {
+      "id": "translation_en_fr_029",
+      "name": "English Idiom - Pull my leg - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"You're pulling my leg, right? That can't be true!\"",
+      "expected_output": "Tu me fais marcher, pas vrai ? Ça ne peut pas être vrai !"
+    },
+    {
+      "id": "translation_en_fr_030",
+      "name": "English Expression - On cloud nine - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"She's been on cloud nine since she got accepted to university.\"",
+      "expected_output": "Elle plane depuis qu'elle a été acceptée à l'université."
+    },
+    {
+      "id": "translation_en_fr_031",
+      "name": "English Idiom - Make a mountain out of a molehill - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"Stop making a mountain out of a molehill! It was just a small error.\"",
+      "expected_output": "Arrête de faire une montagne d'une taupinière ! C'était juste une petite erreur."
+    },
+    {
+      "id": "translation_en_fr_032",
+      "name": "English Business Jargon - Circle back - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"Let me circle back with my team and touch base with you next week.\"",
+      "expected_output": "Laisse-moi en reparler avec mon équipe et on se recontacte la semaine prochaine."
+    },
+    {
+      "id": "translation_en_fr_033",
+      "name": "English Idiom - Down the drain - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"All our efforts went down the drain when the funding was cut.\"",
+      "expected_output": "Tous nos efforts sont tombés à l'eau quand le financement a été coupé."
+    },
+    {
+      "id": "translation_en_fr_034",
+      "name": "English Idiom - Bite the bullet - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"The car is getting old, but we'll have to bite the bullet and buy a new one.\"",
+      "expected_output": "La voiture vieillit, mais il va falloir serrer les dents et en acheter une nouvelle."
+    },
+    {
+      "id": "translation_en_fr_035",
+      "name": "English Slang - Throw shade - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"She was throwing shade at her ex during the whole party.\"",
+      "expected_output": "Elle balançait des piques à son ex pendant toute la soirée."
+    },
+    {
+      "id": "translation_en_fr_036",
+      "name": "English Idiom - Beat around the bush - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"Stop beating around the bush and tell me what you want!\"",
+      "expected_output": "Arrête de tourner autour du pot et dis-moi ce que tu veux !"
+    },
+    {
+      "id": "translation_en_fr_037",
+      "name": "English Tech Slang - It's not a bug, it's a feature - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"The app crashes randomly? It's not a bug, it's a feature!\"",
+      "expected_output": "L'appli plante au hasard ? Ce n'est pas un bug, c'est une fonctionnalité !"
+    },
+    {
+      "id": "translation_en_fr_038",
+      "name": "English Idiom - When pigs fly - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"He'll apologize when pigs fly!\"",
+      "expected_output": "Il s'excusera quand les poules auront des dents !"
+    },
+    {
+      "id": "translation_en_fr_039",
+      "name": "English Idiom - Kick the bucket - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"My old computer finally kicked the bucket last night.\"",
+      "expected_output": "Mon vieil ordinateur a finalement rendu l'âme hier soir."
+    },
+    {
+      "id": "translation_en_fr_040",
+      "name": "English Cultural Expression - Monday Blues - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: French\nText to translate: \"I've got a serious case of the Monday blues today.\"",
+      "expected_output": "J'ai un gros coup de blues du lundi aujourd'hui."
     }
   ]
 }

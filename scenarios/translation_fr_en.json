@@ -159,6 +159,186 @@
       "conversation_history": [],
       "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Les sources d'énergie renouvelable comme l'énergie solaire et éolienne deviennent des alternatives de plus en plus rentables aux combustibles fossiles traditionnels dans de nombreuses régions du monde.\"",
       "expected_output": "Renewable energy sources such as solar and wind power are becoming increasingly cost-effective alternatives to traditional fossil fuels in many regions worldwide."
+    },
+    {
+      "id": "translation_fr_en_021",
+      "name": "French Idiom - Avoir le cafard - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Depuis la rupture, j'ai vraiment le cafard.\"",
+      "expected_output": "Since the breakup, I'm really feeling down."
+    },
+    {
+      "id": "translation_fr_en_022",
+      "name": "French Idiom - Merde! - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Tu passes ton examen demain ? Merde !\"",
+      "expected_output": "You have your exam tomorrow? Break a leg!"
+    },
+    {
+      "id": "translation_fr_en_023",
+      "name": "French Idiom - Vider son sac - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Allez, vide ton sac ! Qu'est-ce qui te tracasse vraiment ?\"",
+      "expected_output": "Come on, spill the beans! What's really bothering you?"
+    },
+    {
+      "id": "translation_fr_en_024",
+      "name": "French Sarcasm - C'est parfait - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"J'ai oublié mes clés, mon téléphone est mort et il pleut. C'est parfait !\"",
+      "expected_output": "I forgot my keys, my phone is dead and it's raining. That's just perfect!"
+    },
+    {
+      "id": "translation_fr_en_025",
+      "name": "French Idiom - Du gâteau - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Ne t'inquiète pas pour l'entretien, ce sera du gâteau !\"",
+      "expected_output": "Don't worry about the interview, it'll be a piece of cake!"
+    },
+    {
+      "id": "translation_fr_en_026",
+      "name": "French Idiom - Mettre dans le mille - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Avec ton commentaire, tu as mis dans le mille !\"",
+      "expected_output": "With your comment, you hit the nail on the head!"
+    },
+    {
+      "id": "translation_fr_en_027",
+      "name": "French Idiom - Faire fausse route - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Si tu penses que c'est moi le coupable, tu fais fausse route.\"",
+      "expected_output": "If you think I'm the guilty one, you're barking up the wrong tree."
+    },
+    {
+      "id": "translation_fr_en_028",
+      "name": "French Slang - Faire le silence radio - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Après notre dispute, elle me fait le silence radio depuis une semaine.\"",
+      "expected_output": "After our argument, she's been ghosting me for a week."
+    },
+    {
+      "id": "translation_fr_en_029",
+      "name": "French Idiom - Avoir la trouille - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Il a eu la trouille au dernier moment et a annulé le rendez-vous.\"",
+      "expected_output": "He got cold feet at the last moment and canceled the appointment."
+    },
+    {
+      "id": "translation_fr_en_030",
+      "name": "French Idiom - Faire marcher quelqu'un - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Tu me fais marcher ou c'est sérieux ?\"",
+      "expected_output": "Are you pulling my leg or are you serious?"
+    },
+    {
+      "id": "translation_fr_en_031",
+      "name": "French Expression - Planer - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Elle plane depuis qu'elle a eu sa promotion.\"",
+      "expected_output": "She's been on cloud nine since she got her promotion."
+    },
+    {
+      "id": "translation_fr_en_032",
+      "name": "French Idiom - Faire une montagne d'une taupinière - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Arrête de faire une montagne d'une taupinière ! C'était juste un malentendu.\"",
+      "expected_output": "Stop making a mountain out of a molehill! It was just a misunderstanding."
+    },
+    {
+      "id": "translation_fr_en_033",
+      "name": "French Business Expression - Se recontacter - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Je vais en discuter avec mon équipe et on se recontacte demain.\"",
+      "expected_output": "I'll discuss it with my team and we'll circle back tomorrow."
+    },
+    {
+      "id": "translation_fr_en_034",
+      "name": "French Idiom - Tomber à l'eau - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Tous nos plans sont tombés à l'eau à cause de la grève.\"",
+      "expected_output": "All our plans went down the drain because of the strike."
+    },
+    {
+      "id": "translation_fr_en_035",
+      "name": "French Idiom - Serrer les dents - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Le traitement est douloureux, mais il faut serrer les dents.\"",
+      "expected_output": "The treatment is painful, but we have to bite the bullet."
+    },
+    {
+      "id": "translation_fr_en_036",
+      "name": "French Slang - Balancer des piques - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Elle n'arrêtait pas de balancer des piques à son collègue pendant la réunion.\"",
+      "expected_output": "She kept throwing shade at her colleague during the meeting."
+    },
+    {
+      "id": "translation_fr_en_037",
+      "name": "French Idiom - Tourner autour du pot - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Arrête de tourner autour du pot et dis-moi ce que tu penses !\"",
+      "expected_output": "Stop beating around the bush and tell me what you think!"
+    },
+    {
+      "id": "translation_fr_en_038",
+      "name": "French Idiom - Quand les poules auront des dents - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Il m'aidera quand les poules auront des dents !\"",
+      "expected_output": "He'll help me when pigs fly!"
+    },
+    {
+      "id": "translation_fr_en_039",
+      "name": "French Idiom - Rendre l'âme - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"Ma vieille voiture a finalement rendu l'âme hier.\"",
+      "expected_output": "My old car finally kicked the bucket yesterday."
+    },
+    {
+      "id": "translation_fr_en_040",
+      "name": "French Cultural Expression - Blues du lundi - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: French\nTarget language: English\nText to translate: \"J'ai un gros blues du lundi aujourd'hui, je n'arrive pas à me motiver.\"",
+      "expected_output": "I have a serious case of the Monday blues today, I can't get motivated."
     }
   ]
 }

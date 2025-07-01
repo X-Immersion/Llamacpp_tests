@@ -159,6 +159,186 @@
       "conversation_history": [],
       "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Renewable energy sources such as solar and wind power are becoming increasingly cost-effective alternatives to traditional fossil fuels in many regions worldwide.\"",
       "expected_output": "Erneuerbare Energiequellen wie Solar- und Windkraft werden in vielen Regionen weltweit zu immer kostengünstigeren Alternativen zu herkömmlichen fossilen Brennstoffen."
+    },
+    {
+      "id": "translation_en_de_021",
+      "name": "English Idiom - Barking up the wrong tree - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"If you think I stole your lunch, you're barking up the wrong tree.\"",
+      "expected_output": "Wenn du denkst, dass ich dein Mittagessen gestohlen habe, bist du auf dem Holzweg."
+    },
+    {
+      "id": "translation_en_de_022",
+      "name": "English Idiom - Spill the beans - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Come on, spill the beans! What really happened at the meeting?\"",
+      "expected_output": "Komm schon, rück mit der Sprache raus! Was ist wirklich in der Besprechung passiert?"
+    },
+    {
+      "id": "translation_en_de_023",
+      "name": "English Sarcasm - That's just great - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"My car broke down, it's raining, and I forgot my umbrella. That's just great!\"",
+      "expected_output": "Mein Auto ist kaputt gegangen, es regnet und ich habe meinen Regenschirm vergessen. Das ist ja toll!"
+    },
+    {
+      "id": "translation_en_de_024",
+      "name": "English Idiom - Hit the nail on the head - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Your analysis really hit the nail on the head!\"",
+      "expected_output": "Deine Analyse hat wirklich den Nagel auf den Kopf getroffen!"
+    },
+    {
+      "id": "translation_en_de_025",
+      "name": "English Slang - Piece of cake - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Don't worry about the exam, it'll be a piece of cake!\"",
+      "expected_output": "Mach dir keine Sorgen wegen der Prüfung, das wird ein Kinderspiel!"
+    },
+    {
+      "id": "translation_en_de_026",
+      "name": "English Idiom - Break a leg - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"You have your big presentation today? Break a leg!\"",
+      "expected_output": "Du hast heute deine große Präsentation? Hals- und Beinbruch!"
+    },
+    {
+      "id": "translation_en_de_027",
+      "name": "English Cultural Phrase - Monday Blues - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"I've got a serious case of the Monday blues today.\"",
+      "expected_output": "Ich habe heute einen schlimmen Montagsblues."
+    },
+    {
+      "id": "translation_en_de_028",
+      "name": "English Idiom - Kick the bucket - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"My old laptop finally kicked the bucket yesterday.\"",
+      "expected_output": "Mein alter Laptop hat gestern endlich den Geist aufgegeben."
+    },
+    {
+      "id": "translation_en_de_029",
+      "name": "English Phrasal Verb - Pull my leg - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"You're pulling my leg, right? That can't be true!\"",
+      "expected_output": "Du willst mich doch auf den Arm nehmen, oder? Das kann nicht stimmen!"
+    },
+    {
+      "id": "translation_en_de_030",
+      "name": "English Idiom - Cold feet - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"He got cold feet just before the wedding ceremony.\"",
+      "expected_output": "Er bekam kurz vor der Hochzeitszeremonie kalte Füße."
+    },
+    {
+      "id": "translation_en_de_031",
+      "name": "English Idiom - Make a mountain out of a molehill - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Stop making a mountain out of a molehill! It was just a minor mistake.\"",
+      "expected_output": "Hör auf, aus einer Mücke einen Elefanten zu machen! Es war nur ein kleiner Fehler."
+    },
+    {
+      "id": "translation_en_de_032",
+      "name": "English Internet Slang - Ghosting - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"After three great dates, he just started ghosting me completely.\"",
+      "expected_output": "Nach drei tollen Dates hat er angefangen, mich komplett zu ignorieren."
+    },
+    {
+      "id": "translation_en_de_033",
+      "name": "English Business Jargon - Circle back - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Let me circle back with the team and touch base with you tomorrow.\"",
+      "expected_output": "Lass mich das nochmal mit dem Team besprechen und mich morgen bei dir melden."
+    },
+    {
+      "id": "translation_en_de_034",
+      "name": "English Idiom - Down the drain - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"All our hard work went down the drain when the client canceled the project.\"",
+      "expected_output": "Unsere ganze harte Arbeit war für die Katz, als der Kunde das Projekt abgesagt hat."
+    },
+    {
+      "id": "translation_en_de_035",
+      "name": "English Expression - On cloud nine - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"She's been on cloud nine ever since she got the promotion.\"",
+      "expected_output": "Sie schwebt auf Wolke sieben, seit sie die Beförderung bekommen hat."
+    },
+    {
+      "id": "translation_en_de_036",
+      "name": "English Idiom - Bite the bullet - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"I know it's expensive, but we'll have to bite the bullet and buy new equipment.\"",
+      "expected_output": "Ich weiß, es ist teuer, aber wir müssen in den sauren Apfel beißen und neue Ausrüstung kaufen."
+    },
+    {
+      "id": "translation_en_de_037",
+      "name": "English Slang - Throw shade - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"She was throwing shade at her competitor during the interview.\"",
+      "expected_output": "Sie hat während des Interviews subtil gegen ihre Konkurrentin gestichelt."
+    },
+    {
+      "id": "translation_en_de_038",
+      "name": "English Idiom - Beat around the bush - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"Stop beating around the bush and tell me what you really think!\"",
+      "expected_output": "Hör auf, um den heißen Brei herumzureden und sag mir, was du wirklich denkst!"
+    },
+    {
+      "id": "translation_en_de_039",
+      "name": "English Tech Slang - Bug vs Feature - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"It's not a bug, it's a feature! That's what they always say.\"",
+      "expected_output": "Das ist kein Fehler, das ist ein Feature! Das sagen sie immer."
+    },
+    {
+      "id": "translation_en_de_040",
+      "name": "English Idiom - When pigs fly - Very Hard",
+      "difficulty": "very hard",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "test_prompt": "Source language: English\nTarget language: German\nText to translate: \"He'll clean his room when pigs fly!\"",
+      "expected_output": "Er wird sein Zimmer aufräumen, wenn Ostern und Weihnachten auf einen Tag fallen!"
     }
   ]
 }
