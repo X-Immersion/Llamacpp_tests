@@ -21,8 +21,8 @@ except ImportError:
 load_dotenv()
 
 # Test configuration - change these to switch between models and scenario types
-MODEL_TYPE = "llama32-3B"  # Options: ['gemma3-12B', 'llama31-8B', 'qwen3-8B'] + ['all']
-SCENARIO_TYPE = "roleplay-de"  # Options: "roleplay-{language}", "topic-detection-{language}", "translation-{origin-language}-{language}", "all"
+MODEL_TYPE = "all"  # Options: ['gemma3-12B', 'llama31-8B', 'qwen3-8B'] + ['all']
+SCENARIO_TYPE = "all"  # Options: "roleplay-{language}", "topic-detection-{language}", "translation-{origin-language}-{language}", "all"
 
 # Quick test mode - set to True for quick testing with fewer scenarios
 QUICK_TEST = False  # Set to False for full testing
