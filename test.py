@@ -29,8 +29,9 @@ QUICK_TEST = False  # Set to False for full testing
 
 # Config
 MAX_TOKENS = 80
-TEMPERATURE = 0.9
-TOP_P = 0.7
+TEMPERATURE = 1.0
+TOP_P = 0.65
+TOP_K = 20
 
 # Model configurations
 MODEL_CONFIGS = {
@@ -79,6 +80,23 @@ MODEL_CONFIGS = {
         "allow_patterns": ["*Q4_K_M*"],
         "model_file": "Qwen3-8B-Q4_K_M.gguf",
         "chat_format": "qwen",
+        "thinking": False
+    },
+    "Mistral-7B": {
+        "type": "local",
+        "repo_id": "lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF",
+        "local_dir": "lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF",
+        "allow_patterns": ["*Q4_K_M*"],
+        "model_file": "Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
+        "chat_format": "mistral-instruct",
+    },
+    "Nous-Hermes-2-7B": {
+        "type": "local",
+        "repo_id": "TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF",
+        "local_dir": "TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF",
+        "allow_patterns": ["*Q4_K_M*"],
+        "model_file": "nous-hermes-2-solar-10.7b.Q4_K_M.gguf",
+        "chat_format": "chatml",
         "thinking": False
     },
     "gemma3-12B": {
@@ -346,6 +364,7 @@ def test_scenario(llm, scenario, model_type, scenario_type):
             max_tokens=MAX_TOKENS,
             temperature=TEMPERATURE,
             top_p=TOP_P,
+            top_k=TOP_K,
             stream=False
         )
         
@@ -597,13 +616,13 @@ def run_single_test(model_type, scenario_type):
         download_start = time.time()
         snapshot_download(
             repo_id=model_config["repo_id"],
-            local_dir=model_config["local_dir"],
+            local_dir=os.path.join("models", model_config["local_dir"]),
             allow_patterns=model_config["allow_patterns"]
         )
         download_time = time.time() - download_start
         
         # Initialize the local model
-        model_path = f"./{model_config['local_dir']}/{model_config['model_file']}"
+        model_path = os.path.join("models", model_config["local_dir"], model_config["model_file"])
         print(f"Loading model from: {model_path}")
         
         model_load_start = time.time()

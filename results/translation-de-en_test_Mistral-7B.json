@@ -1,0 +1,821 @@
+{
+  "model_type": "Mistral-7B",
+  "scenario_type": "translation-de-en",
+  "timestamp": "20250702-102741",
+  "test_type": "translation-de-en",
+  "language": "de",
+  "results": [
+    {
+      "scenario_id": "translation_de_en_001",
+      "scenario_name": "Simple Greeting - Easy",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Hallo, wie geht es dir heute?\"",
+      "response": "Hello, how are you today?\n\nIn this example, the German phrase \"Hallo, wie geht es dir heute?\" translates to \"Hello, how are you today?\" in English. This is a common greeting in German-speaking countries, similar to \"Hello, how are you?\" in English.\n\nIf you'd like to learn more about the German language",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.502,
+        "tokens_per_second": 9.41,
+        "time_to_first_token_seconds": 0.85,
+        "prompt_tokens": 30,
+        "completion_tokens": 80,
+        "total_tokens": 110,
+        "response_length_chars": 303,
+        "response_length_words": 52,
+        "chars_per_second": 35.64,
+        "words_per_second": 6.12
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_002",
+      "scenario_name": "Restaurant Order - Easy",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Ich hätte gerne einen Kaffee und ein Stück Kuchen, bitte.\"",
+      "response": "I would like a coffee and a piece of cake, please.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.845,
+        "tokens_per_second": 7.04,
+        "time_to_first_token_seconds": 0.185,
+        "prompt_tokens": 42,
+        "completion_tokens": 13,
+        "total_tokens": 55,
+        "response_length_chars": 50,
+        "response_length_words": 11,
+        "chars_per_second": 27.09,
+        "words_per_second": 5.96
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_003",
+      "scenario_name": "Weather Description - Medium",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Die Wettervorhersage sagt starken Regen und Gewitter für das ganze Wochenende voraus, daher sollten wir unsere Wanderung wahrscheinlich verschieben.\"",
+      "response": "The weather forecast predicts heavy rain and thunderstorms for the entire weekend, therefore we should probably reschedule our hike.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.784,
+        "tokens_per_second": 7.14,
+        "time_to_first_token_seconds": 0.378,
+        "prompt_tokens": 68,
+        "completion_tokens": 27,
+        "total_tokens": 95,
+        "response_length_chars": 132,
+        "response_length_words": 19,
+        "chars_per_second": 34.88,
+        "words_per_second": 5.02
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_004",
+      "scenario_name": "Technology Discussion - Medium",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Das neueste Smartphone verfügt über ein fortschrittliches Kamerasystem mit künstlicher Intelligenz, das automatisch die Bildqualität bei verschiedenen Lichtverhältnissen verbessern kann.\"",
+      "response": "The latest smartphone features an advanced camera system with artificial intelligence, which can automatically improve image quality under various lighting conditions.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.653,
+        "tokens_per_second": 6.57,
+        "time_to_first_token_seconds": 0.365,
+        "prompt_tokens": 74,
+        "completion_tokens": 24,
+        "total_tokens": 98,
+        "response_length_chars": 167,
+        "response_length_words": 21,
+        "chars_per_second": 45.71,
+        "words_per_second": 5.75
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_005",
+      "scenario_name": "Academic Text - Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Der interdisziplinäre Ansatz zur nachhaltigen Entwicklung erfordert eine Zusammenarbeit zwischen Umweltwissenschaftlern, Ökonomen und Politikern, um die komplexen Herausforderungen des Klimawandels anzugehen und gleichzeitig das Wirtschaftswachstum aufrechtzuerhalten.\"",
+      "response": "The interdisciplinary approach to sustainable development requires cooperation between environmental scientists, economists, and politicians to address the complex challenges of climate change while simultaneously maintaining economic growth.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 5.066,
+        "tokens_per_second": 6.71,
+        "time_to_first_token_seconds": 0.507,
+        "prompt_tokens": 98,
+        "completion_tokens": 34,
+        "total_tokens": 132,
+        "response_length_chars": 242,
+        "response_length_words": 27,
+        "chars_per_second": 47.77,
+        "words_per_second": 5.33
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_006",
+      "scenario_name": "Idiomatic Expression - Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Man soll den Tag nicht vor dem Abend loben - wir sollten auf die offiziellen Ergebnisse warten, bevor wir unseren Erfolg feiern.\"",
+      "response": "The day should not be praised before the evening - we should wait for the official results before we celebrate our success.\n\nIn this sentence, \"Man\" is a formal way to say \"one\" or \"you\" in German. \"Tag\" means \"day,\" \"nicht\" is \"not,\" \"vor\" is \"before,\" \"Abend\" is \"evening,\" \"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.712,
+        "tokens_per_second": 9.18,
+        "time_to_first_token_seconds": 0.871,
+        "prompt_tokens": 59,
+        "completion_tokens": 80,
+        "total_tokens": 139,
+        "response_length_chars": 277,
+        "response_length_words": 50,
+        "chars_per_second": 31.79,
+        "words_per_second": 5.74
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_007",
+      "scenario_name": "Medical Context - Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Der Patient zeigt Symptome einer akuten Bronchitis, einschließlich anhaltendem Husten, Brustenge und Atembeschwerden, was eine sofortige medizinische Behandlung erfordern könnte.\"",
+      "response": "The patient shows symptoms of acute bronchitis, including persistent coughing, chest pain, and breathing difficulties, which may require immediate medical treatment.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.191,
+        "tokens_per_second": 7.16,
+        "time_to_first_token_seconds": 0.419,
+        "prompt_tokens": 75,
+        "completion_tokens": 30,
+        "total_tokens": 105,
+        "response_length_chars": 165,
+        "response_length_words": 21,
+        "chars_per_second": 39.37,
+        "words_per_second": 5.01
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_008",
+      "scenario_name": "Short Question - Easy",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Wo ist der nächste Bahnhof?\"",
+      "response": "The nearest station is \"Where is the next station?\" in English.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.668,
+        "tokens_per_second": 8.39,
+        "time_to_first_token_seconds": 0.167,
+        "prompt_tokens": 30,
+        "completion_tokens": 14,
+        "total_tokens": 44,
+        "response_length_chars": 63,
+        "response_length_words": 11,
+        "chars_per_second": 37.77,
+        "words_per_second": 6.59
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_009",
+      "scenario_name": "Literary Text - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Der melancholische Herbstwind flüsterte durch die goldenen Blätter und trug die bittersüßen Erinnerungen an die flüchtige Umarmung des Sommers mit sich, als ob die Natur selbst den unvermeidlichen Lauf der Zeit betrauerte.\"",
+      "response": "The melancholy autumn wind whispered through the golden leaves and carried the bitter-sweet memories of the fleeting embrace of summer with it, as if nature itself lamented the inevitable course of time.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 5.629,
+        "tokens_per_second": 7.46,
+        "time_to_first_token_seconds": 0.563,
+        "prompt_tokens": 84,
+        "completion_tokens": 42,
+        "total_tokens": 126,
+        "response_length_chars": 203,
+        "response_length_words": 32,
+        "chars_per_second": 36.07,
+        "words_per_second": 5.69
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_010",
+      "scenario_name": "Business Context - Medium",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Unser Quartalsumsatzbericht zeigt eine erhebliche Umsatzsteigerung, die hauptsächlich durch starke Leistungen in den europäischen Märkten und erfolgreiche Produkteinführungen vorangetrieben wurde.\"",
+      "response": "Our quarterly sales report shows a significant increase in sales, which was primarily driven by strong performances in the European markets and successful product launches.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.241,
+        "tokens_per_second": 6.84,
+        "time_to_first_token_seconds": 0.424,
+        "prompt_tokens": 79,
+        "completion_tokens": 29,
+        "total_tokens": 108,
+        "response_length_chars": 172,
+        "response_length_words": 25,
+        "chars_per_second": 40.56,
+        "words_per_second": 5.89
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_011",
+      "scenario_name": "Travel Directions - Easy",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Nehmen Sie die zweite Straße rechts und gehen Sie etwa 200 Meter geradeaus weiter.\"",
+      "response": "Take the second road to the right and walk straight ahead for about 200 meters.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 2.594,
+        "tokens_per_second": 7.33,
+        "time_to_first_token_seconds": 0.259,
+        "prompt_tokens": 46,
+        "completion_tokens": 19,
+        "total_tokens": 65,
+        "response_length_chars": 79,
+        "response_length_words": 15,
+        "chars_per_second": 30.46,
+        "words_per_second": 5.78
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_012",
+      "scenario_name": "Emergency Situation - Medium",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Bitte rufen Sie sofort einen Krankenwagen! Es gab einen schweren Unfall und jemand braucht dringend medizinische Hilfe.\"",
+      "response": "\"Please call an ambulance immediately! There has been a serious accident and someone needs urgent medical help.\"\n\nExplanation:\n\n1. \"Bitte\" (Please) - This is a polite way to make a request in German.\n2. \"rufen Sie\" (You call) - This is the second person singular (formal) imperative of the verb",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.76,
+        "tokens_per_second": 9.13,
+        "time_to_first_token_seconds": 0.876,
+        "prompt_tokens": 59,
+        "completion_tokens": 80,
+        "total_tokens": 139,
+        "response_length_chars": 294,
+        "response_length_words": 50,
+        "chars_per_second": 33.56,
+        "words_per_second": 5.71
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_013",
+      "scenario_name": "Scientific Research - Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Die Hypothese postuliert, dass Quantenverschränkungsphänomene möglicherweise die Informationsverarbeitungskapazitäten in Computerarchitekturen der nächsten Generation revolutionieren könnten.\"",
+      "response": "The hypothesis suggests that quantum entanglement phenomena might potentially revolutionize the information processing capacities in computer architectures of the next generation.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.988,
+        "tokens_per_second": 7.02,
+        "time_to_first_token_seconds": 0.399,
+        "prompt_tokens": 74,
+        "completion_tokens": 28,
+        "total_tokens": 102,
+        "response_length_chars": 179,
+        "response_length_words": 21,
+        "chars_per_second": 44.88,
+        "words_per_second": 5.27
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_014",
+      "scenario_name": "Cooking Instructions - Medium",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Heizen Sie den Ofen auf 180 Grad Celsius vor, vermischen Sie die Zutaten gründlich und backen Sie etwa 25 Minuten, bis alles goldbraun ist.\"",
+      "response": "Preheat your oven to 180 degrees Celsius, mix the ingredients thoroughly and bake for about 25 minutes, until everything is golden brown.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 5.103,
+        "tokens_per_second": 6.86,
+        "time_to_first_token_seconds": 0.51,
+        "prompt_tokens": 67,
+        "completion_tokens": 35,
+        "total_tokens": 102,
+        "response_length_chars": 137,
+        "response_length_words": 22,
+        "chars_per_second": 26.84,
+        "words_per_second": 4.31
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_015",
+      "scenario_name": "Legal Document - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Die Vertragsparteien stimmen hiermit den hierin festgelegten Bedingungen zu, wobei jeder Vertragsbruch zur sofortigen Kündigung und möglichen rechtlichen Konsequenzen führt.\"",
+      "response": "The contracting parties agree with the conditions set out herein, with any breach of contract resulting in immediate termination and potential legal consequences.\n\nExplanation:\n\n* \"Vertragsparteien\" - contracting parties (those who have agreed to the contract)\n* \"hierin\" - in this contract\n* \"bedingungen\" - conditions",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 9.161,
+        "tokens_per_second": 8.73,
+        "time_to_first_token_seconds": 0.916,
+        "prompt_tokens": 73,
+        "completion_tokens": 80,
+        "total_tokens": 153,
+        "response_length_chars": 319,
+        "response_length_words": 46,
+        "chars_per_second": 34.82,
+        "words_per_second": 5.02
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_016",
+      "scenario_name": "Sports Commentary - Medium",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Der Torwart machte eine unglaubliche Parade in den letzten Sekunden und sicherte seinem Team den Sieg in diesem packenden Meisterschaftsspiel.\"",
+      "response": "The goalkeeper made an incredible save in the last seconds and secured the victory for his team in this thrilling championship game.\n\nAlternative translation: The goalkeeper pulled off a remarkable save in the dying seconds, ensuring his team's win in this nail-biting championship match.\n\nAlternative translation (formal): The goalkeeper executed a stunning save in the final",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.858,
+        "tokens_per_second": 9.03,
+        "time_to_first_token_seconds": 0.886,
+        "prompt_tokens": 59,
+        "completion_tokens": 80,
+        "total_tokens": 139,
+        "response_length_chars": 376,
+        "response_length_words": 56,
+        "chars_per_second": 42.45,
+        "words_per_second": 6.32
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_017",
+      "scenario_name": "Simple Apology - Easy",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Es tut mir leid, dass ich zu spät bin.\"",
+      "response": "I'm sorry, I am a machine and do not feel emotions, but I can help you translate the German text \"Es tut mir leid, dass ich zu spät bin.\" to English. The translation is: \"I'm sorry, I'm late.\"\n\nHere are some other possible translations with different intonations:\n\n* \"I'm sorry,",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.172,
+        "tokens_per_second": 9.79,
+        "time_to_first_token_seconds": 0.817,
+        "prompt_tokens": 33,
+        "completion_tokens": 80,
+        "total_tokens": 113,
+        "response_length_chars": 278,
+        "response_length_words": 50,
+        "chars_per_second": 34.02,
+        "words_per_second": 6.12
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_018",
+      "scenario_name": "Historical Text - Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Die Industrielle Revolution veränderte die Gesellschaft grundlegend und leitete eine Ära beispielloser technologischer Fortschritte und sozialer Veränderungen ein, die unsere moderne Welt weiterhin prägt.\"",
+      "response": "The Industrial Revolution fundamentally changed society and ushered in an era of unprecedented technological advancements and social changes that continue to shape our modern world.\n\nHere is the translation of the given text:\n\nGerman: Die Industrielle Revolution veränderte die Gesellschaft grundlegend und leitete eine Ära beispielloser technologischer Fort",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.98,
+        "tokens_per_second": 8.91,
+        "time_to_first_token_seconds": 0.898,
+        "prompt_tokens": 77,
+        "completion_tokens": 80,
+        "total_tokens": 157,
+        "response_length_chars": 358,
+        "response_length_words": 48,
+        "chars_per_second": 39.87,
+        "words_per_second": 5.35
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_019",
+      "scenario_name": "Philosophical Quote - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Das ungeprüfte Leben ist nicht lebenswert, denn durch Selbstreflexion und Kontemplation entdecken wir unseren wahren Zweck und Sinn im Dasein.\"",
+      "response": "The unexamined life is not worth living, for through self-reflection and contemplation we discover our true purpose and meaning in existence.\n\nExplanation: The German phrase \"Das ungeprüfte Leben ist nicht lebenswert\" translates to \"The unexamined life is not worth living\" in English. The rest of the sentence,",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.734,
+        "tokens_per_second": 9.16,
+        "time_to_first_token_seconds": 0.873,
+        "prompt_tokens": 67,
+        "completion_tokens": 80,
+        "total_tokens": 147,
+        "response_length_chars": 311,
+        "response_length_words": 47,
+        "chars_per_second": 35.61,
+        "words_per_second": 5.38
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_020",
+      "scenario_name": "Environmental News - Medium",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Erneuerbare Energiequellen wie Solar- und Windkraft werden in vielen Regionen weltweit zu immer kostengünstigeren Alternativen zu herkömmlichen fossilen Brennstoffen.\"",
+      "response": "Renewable energy sources such as solar and wind power are becoming increasingly cost-effective alternatives to conventional fossil fuels in many regions worldwide.\n\nIn this translation, \"Erneuerbare Energiequellen\" translates to \"renewable energy sources,\" \"Solar- und Windkraft\" translates to \"solar and wind power,\" \"weltwe",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.799,
+        "tokens_per_second": 9.09,
+        "time_to_first_token_seconds": 0.88,
+        "prompt_tokens": 71,
+        "completion_tokens": 80,
+        "total_tokens": 151,
+        "response_length_chars": 325,
+        "response_length_words": 42,
+        "chars_per_second": 36.94,
+        "words_per_second": 4.77
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_021",
+      "scenario_name": "German Idiom - Das ist nicht das Gelbe vom Ei - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Die neue Lösung ist nicht das Gelbe vom Ei, aber sie ist besser als das, was wir vorher hatten.\"",
+      "response": "The new solution isn't the yellow of an egg, but it's better than what we had before.\n\nAlternatively, the new solution isn't the yellow of an egg, but it's superior to what we had previously.\n\nOr, the new solution isn't the yellow of an egg, but it's an improvement over what we had before.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.471,
+        "tokens_per_second": 9.44,
+        "time_to_first_token_seconds": 0.847,
+        "prompt_tokens": 49,
+        "completion_tokens": 80,
+        "total_tokens": 129,
+        "response_length_chars": 290,
+        "response_length_words": 54,
+        "chars_per_second": 34.23,
+        "words_per_second": 6.37
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_022",
+      "scenario_name": "German Idiom - Jemandem einen Bären aufbinden - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Du willst mir doch wohl keinen Bären aufbinden! Das kann ich kaum glauben.\"",
+      "response": "You don't want to tie a bear up for me, I find that hard to believe.\n\nThis idiomatic German phrase translates to English as \"You're not making a mountain out of a molehill\" or \"You're overreacting\". It's used to express that someone is making a big deal out of something that is not important. The phrase \"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.334,
+        "tokens_per_second": 9.6,
+        "time_to_first_token_seconds": 0.833,
+        "prompt_tokens": 47,
+        "completion_tokens": 80,
+        "total_tokens": 127,
+        "response_length_chars": 306,
+        "response_length_words": 57,
+        "chars_per_second": 36.72,
+        "words_per_second": 6.84
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_023",
+      "scenario_name": "German Wordplay - Verschlimmbessern - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Mit seinem Eingriff hat er die Situation nur verschlimmbessert.\"",
+      "response": "With his intervention, he only worsened the situation.\n\nExplanation: \"Mit seinem Eingriff\" translates to \"with his intervention\", \"hat er\" translates to \"he has\", \"die Situation\" translates to \"the situation\", and \"verschlimmbessert\" translates to \"worsened\". So, the whole sentence",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.171,
+        "tokens_per_second": 9.79,
+        "time_to_first_token_seconds": 0.817,
+        "prompt_tokens": 39,
+        "completion_tokens": 80,
+        "total_tokens": 119,
+        "response_length_chars": 282,
+        "response_length_words": 38,
+        "chars_per_second": 34.51,
+        "words_per_second": 4.65
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_024",
+      "scenario_name": "German Slang - Das ist mir Wurst - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Welches Restaurant wir wählen, ist mir völlig Wurst. Hauptsache, das Essen schmeckt.\"",
+      "response": "The restaurant we choose doesn't matter to me at all. The main thing is that the food tastes good.\n\nIn this translation, I tried to maintain the playful tone of the original German sentence, where \"Wurst\" can be interpreted as \"sausage\" but also as an informal way of saying \"doesn't matter\" or \"irrelevant.\" The",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.719,
+        "tokens_per_second": 9.18,
+        "time_to_first_token_seconds": 0.872,
+        "prompt_tokens": 52,
+        "completion_tokens": 80,
+        "total_tokens": 132,
+        "response_length_chars": 312,
+        "response_length_words": 54,
+        "chars_per_second": 35.79,
+        "words_per_second": 6.19
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_025",
+      "scenario_name": "German Cultural Reference - Ostalgie - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Seine Ostalgie zeigt sich in der Sammlung von DDR-Memorabilia und dem Schwärmen für die 'guten alten Zeiten'.\"",
+      "response": "His Ostalgia is shown in the collection of DDR memorabilia and the fondness for the 'good old times'.\n\nOstalgie is a term used to describe a sense of nostalgia for the former German Democratic Republic (DDR). In this context, the individual has a collection of memorabilia from the DDR and expresses fondness for the past.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.664,
+        "tokens_per_second": 9.12,
+        "time_to_first_token_seconds": 0.866,
+        "prompt_tokens": 58,
+        "completion_tokens": 79,
+        "total_tokens": 137,
+        "response_length_chars": 322,
+        "response_length_words": 55,
+        "chars_per_second": 37.17,
+        "words_per_second": 6.35
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_026",
+      "scenario_name": "German Idiom - Tomaten auf den Augen haben - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Hast du Tomaten auf den Augen? Der Schlüssel liegt direkt vor dir auf dem Tisch!\"",
+      "response": "Do you have tomatoes in your eyes? The key is right in front of you on the table!",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 2.819,
+        "tokens_per_second": 7.45,
+        "time_to_first_token_seconds": 0.282,
+        "prompt_tokens": 44,
+        "completion_tokens": 21,
+        "total_tokens": 65,
+        "response_length_chars": 81,
+        "response_length_words": 18,
+        "chars_per_second": 28.73,
+        "words_per_second": 6.38
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_027",
+      "scenario_name": "German Compound Word - Verschlimmbesserer - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Er ist ein klassischer Verschlimmbesserer - jedes Mal, wenn er helfen will, macht er alles nur noch schlimmer.\"",
+      "response": "He is a typical self-saboteur - every time he tries to help, he makes things even worse.\n\nOr alternatively: He is a classic case of a person who makes things worse when trying to help.\n\nNote: \"Verschlimmbesserer\" is a German idiom that doesn't have a direct translation in English, but \"self-s",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.641,
+        "tokens_per_second": 9.26,
+        "time_to_first_token_seconds": 0.864,
+        "prompt_tokens": 53,
+        "completion_tokens": 80,
+        "total_tokens": 133,
+        "response_length_chars": 293,
+        "response_length_words": 51,
+        "chars_per_second": 33.91,
+        "words_per_second": 5.9
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_028",
+      "scenario_name": "German Idiom - Ins Gras beißen - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Der alte Computer hat endlich ins Gras gebissen. Zeit für einen neuen!\"",
+      "response": "The old computer has finally bitten the dust. Time for a new one!",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 2.029,
+        "tokens_per_second": 7.89,
+        "time_to_first_token_seconds": 0.203,
+        "prompt_tokens": 38,
+        "completion_tokens": 16,
+        "total_tokens": 54,
+        "response_length_chars": 65,
+        "response_length_words": 13,
+        "chars_per_second": 32.04,
+        "words_per_second": 6.41
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_029",
+      "scenario_name": "German Regional Expression - Moin - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Moin! Wie läuft's denn so bei dir?\"",
+      "response": "Hello! How's it going with you?\n\nIn this example, \"Moin\" is a common greeting in Northern Germany, similar to \"Hi\" or \"Hey\" in English. \"Wie läuft's denn so bei dir?\" translates to \"How's it going with you?\" in English. So, the full sentence \"Moin! W",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.178,
+        "tokens_per_second": 9.78,
+        "time_to_first_token_seconds": 0.818,
+        "prompt_tokens": 36,
+        "completion_tokens": 80,
+        "total_tokens": 116,
+        "response_length_chars": 250,
+        "response_length_words": 45,
+        "chars_per_second": 30.57,
+        "words_per_second": 5.5
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_030",
+      "scenario_name": "German Idiom - Auf dem Holzweg sein - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Wenn du denkst, dass diese Strategie funktioniert, bist du auf dem Holzweg.\"",
+      "response": "If you think this strategy works, you're on the wrong track.\n\nThis German phrase translates to English as \"If you think this strategy works, you're on the wrong track.\" It is often used to imply that someone is following a faulty or ineffective approach. The idiom \"on the wrong track\" means that one is on a course of action that is not",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.333,
+        "tokens_per_second": 9.6,
+        "time_to_first_token_seconds": 0.833,
+        "prompt_tokens": 44,
+        "completion_tokens": 80,
+        "total_tokens": 124,
+        "response_length_chars": 337,
+        "response_length_words": 62,
+        "chars_per_second": 40.44,
+        "words_per_second": 7.44
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_031",
+      "scenario_name": "German Complex Compound - Verschlimmbessrerungssucht - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Seine Verschlimmbessrerungssucht macht ihn zu einem schwierigen Teamkollegen.\"",
+      "response": "His propensity for making things worse makes him a difficult teammate.\n\nAlternatively, his tendency to make things worse makes him a challenging team colleague.\n\nOr, his habit of making things worse makes him a hard team member to work with.\n\nEach of these translations conveys the same meaning as the original German sentence. The choice between them may depend on the",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.495,
+        "tokens_per_second": 9.42,
+        "time_to_first_token_seconds": 0.85,
+        "prompt_tokens": 45,
+        "completion_tokens": 80,
+        "total_tokens": 125,
+        "response_length_chars": 369,
+        "response_length_words": 61,
+        "chars_per_second": 43.44,
+        "words_per_second": 7.18
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_032",
+      "scenario_name": "German Idiom - Schwein haben - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Du hast aber Schwein gehabt! Ohne den Regenschirm wärst du klatschnass geworden.\"",
+      "response": "You had a pig in you! Without an umbrella, you would have been all wet.\n\nExplanation: \"Schwein gehabt\" translates to \"had a pig\" which is an idiomatic expression in German meaning someone has acted very badly or dishonorably. \"Klatschnass\" means all wet or soaked. The sentence is",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.484,
+        "tokens_per_second": 9.43,
+        "time_to_first_token_seconds": 0.848,
+        "prompt_tokens": 46,
+        "completion_tokens": 80,
+        "total_tokens": 126,
+        "response_length_chars": 280,
+        "response_length_words": 47,
+        "chars_per_second": 33.0,
+        "words_per_second": 5.54
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_033",
+      "scenario_name": "German Ironic Expression - Das ist ja toll - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Mein Auto ist kaputt, es regnet und ich habe meinen Schlüssel verloren. Das ist ja toll!\"",
+      "response": "My car is broken, it's raining and I've lost my key. That's just great!\n\nIn this example, the phrase \"Das ist ja toll!\" is colloquial German and translates to \"That's just great!\" in English. It's used to express frustration or sarcasm. In the given context, the speaker is express",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.465,
+        "tokens_per_second": 9.45,
+        "time_to_first_token_seconds": 0.846,
+        "prompt_tokens": 47,
+        "completion_tokens": 80,
+        "total_tokens": 127,
+        "response_length_chars": 281,
+        "response_length_words": 49,
+        "chars_per_second": 33.2,
+        "words_per_second": 5.79
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_034",
+      "scenario_name": "German Idiom - Den Nagel auf den Kopf treffen - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Mit deiner Analyse hast du den Nagel auf den Kopf getroffen!\"",
+      "response": "With your analysis, you hit the nail on the head!\n\nNote: In English, the phrase \"hit the nail on the head\" is idiomatic and means to say or do exactly the right thing. In this context, it means that the analysis was correct or accurate.\n\nIn German, the phrase \"Mit deiner Analyse hast du den Nagel auf den",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.19,
+        "tokens_per_second": 9.77,
+        "time_to_first_token_seconds": 0.819,
+        "prompt_tokens": 40,
+        "completion_tokens": 80,
+        "total_tokens": 120,
+        "response_length_chars": 305,
+        "response_length_words": 58,
+        "chars_per_second": 37.24,
+        "words_per_second": 7.08
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_035",
+      "scenario_name": "German Technical Humor - Handy vs Phone - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Kannst du mir mal dein Handy leihen? Meins ist im Eimer.\"",
+      "response": "Could you lend me your phone for a moment? Mine is in the bucket.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 2.339,
+        "tokens_per_second": 7.27,
+        "time_to_first_token_seconds": 0.234,
+        "prompt_tokens": 41,
+        "completion_tokens": 17,
+        "total_tokens": 58,
+        "response_length_chars": 65,
+        "response_length_words": 14,
+        "chars_per_second": 27.79,
+        "words_per_second": 5.99
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_036",
+      "scenario_name": "German Idiom - Im Eimer sein - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Nach dem Skandal war seine politische Karriere im Eimer.\"",
+      "response": "\"After the scandal, his political career was in the dumps.\"\n\nThis translation conveys the idiomatic expression \"im Eimer sein\" which means \"to be in trouble\" or \"to be in a bad situation\" in a way that is appropriate in English. The original German phrase \"seine politische Karriere im Eimer\" translates directly to \"his political career",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.179,
+        "tokens_per_second": 9.78,
+        "time_to_first_token_seconds": 0.818,
+        "prompt_tokens": 35,
+        "completion_tokens": 80,
+        "total_tokens": 115,
+        "response_length_chars": 337,
+        "response_length_words": 55,
+        "chars_per_second": 41.2,
+        "words_per_second": 6.72
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_037",
+      "scenario_name": "German Bureaucratic Humor - Verschlimmbessrungsreflex - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Die Verwaltung zeigt wieder ihren typischen Verschlimmbessrungsreflex bei der neuen Verordnung.\"",
+      "response": "The administration shows again its typical deterioration reflex with the new regulation.\n\nOr alternatively:\n\nThe administration exhibits once more its typical tendency towards worsening with the new ordinance.\n\nOr more casually:\n\nThe administration is at it again, worsening things with the new regulation.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 7.308,
+        "tokens_per_second": 9.31,
+        "time_to_first_token_seconds": 0.731,
+        "prompt_tokens": 46,
+        "completion_tokens": 68,
+        "total_tokens": 114,
+        "response_length_chars": 306,
+        "response_length_words": 43,
+        "chars_per_second": 41.87,
+        "words_per_second": 5.88
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_038",
+      "scenario_name": "German Idiom - Kalte Füße bekommen - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Kurz vor der Präsentation bekam er kalte Füße und sagte den Termin ab.\"",
+      "response": "Shortly before the presentation, he got cold feet and cancelled the appointment.\n\nAlternatively, in a more colloquial context: He got cold feet and bailed on the presentation.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 4.712,
+        "tokens_per_second": 8.7,
+        "time_to_first_token_seconds": 0.471,
+        "prompt_tokens": 46,
+        "completion_tokens": 41,
+        "total_tokens": 87,
+        "response_length_chars": 175,
+        "response_length_words": 27,
+        "chars_per_second": 37.14,
+        "words_per_second": 5.73
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_039",
+      "scenario_name": "German Sarcastic Diminutive - Problemchen - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Wir haben da ein kleines Problemchen - die gesamte Datenbank ist gelöscht worden.\"",
+      "response": "We have a small issue here - the entire database has been deleted.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 2.054,
+        "tokens_per_second": 6.82,
+        "time_to_first_token_seconds": 0.205,
+        "prompt_tokens": 44,
+        "completion_tokens": 14,
+        "total_tokens": 58,
+        "response_length_chars": 66,
+        "response_length_words": 13,
+        "chars_per_second": 32.14,
+        "words_per_second": 6.33
+      }
+    },
+    {
+      "scenario_id": "translation_de_en_040",
+      "scenario_name": "German Idiom - Aus einer Mücke einen Elefanten machen - Very Hard",
+      "prompt": "Source language: German\nTarget language: English\nText to translate: \"Du machst wieder aus einer Mücke einen Elefanten! Es war nur ein kleiner Fehler.\"",
+      "response": "You are turning a mosquito into an elephant again! It was just a small mistake.\n\nIn this sentence, \"Du machst wieder aus einer Mücke einen Elefanten\" translates to \"You are turning a mosquito into an elephant again\", which is an idiomatic expression in English that means to exaggerate or overreact to a small problem.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 8.339,
+        "tokens_per_second": 9.59,
+        "time_to_first_token_seconds": 0.834,
+        "prompt_tokens": 44,
+        "completion_tokens": 80,
+        "total_tokens": 124,
+        "response_length_chars": 318,
+        "response_length_words": 54,
+        "chars_per_second": 38.13,
+        "words_per_second": 6.48
+      }
+    }
+  ],
+  "source_language": "de",
+  "target_language": "en",
+  "performance_summary": {
+    "model_download_time_seconds": 0.279,
+    "model_load_time_seconds": 4.125,
+    "total_test_time_seconds": 259.368,
+    "total_scenarios_tested": 40,
+    "average_generation_time_seconds": 6.484,
+    "average_tokens_per_second": 8.54,
+    "total_tokens_generated": 4470,
+    "total_generation_time_seconds": 259.364
+  }
+}
