@@ -9,45 +9,83 @@ import os
 from pathlib import Path
 from datetime import datetime
 import re
-import re
+
+def analyze_topic_detection_response(response, expected_output=None):
+    """Analyze a topic detection response for JSON validity and topic correctness"""
+    analysis = {
+        'is_valid_json': False,
+        'topic_matches': False,
+        'response_json': None,
+        'expected_json': None,
+        'confidence': None
+    }
+    
+    # Check if response is valid JSON
+    try:
+        response_json = json.loads(response.strip())
+        analysis['is_valid_json'] = True
+        analysis['response_json'] = response_json
+        analysis['confidence'] = response_json.get('confidence')
+    except json.JSONDecodeError:
+        return analysis
+    
+    # Check if expected output is provided and valid JSON
+    if expected_output:
+        try:
+            expected_json = json.loads(expected_output)
+            analysis['expected_json'] = expected_json
+            
+            # Check if topics match
+            if (response_json.get('topic') == expected_json.get('topic')):
+                analysis['topic_matches'] = True
+        except json.JSONDecodeError:
+            pass
+    
+    return analysis
 
 def get_latest_results_by_model_and_scenario():
-    """Get the latest result file for each model and scenario type combination"""
+    """Get result files for each model and scenario type combination"""
     results_dir = Path("results")
     if not results_dir.exists():
         print("No results directory found.")
         return {}
     
-    # Pattern: {scenario_type}_test_{model}_{timestamp}.json
+    # Pattern: {scenario_type}_test_{model}.json (new format without timestamp)
     result_files = list(results_dir.glob("*_test_*.json"))
     
-    # Group by model and scenario type, keeping only the latest
-    latest_results = {}
+    # Group by model and scenario type
+    results = {}
     
     for file in result_files:
-        # Parse filename: scenario_test_model_timestamp.json  
+        # Parse filename: scenario_test_model.json  
         parts = file.stem.split('_')
-        if len(parts) < 4:
+        if len(parts) < 3:
             continue
             
-        scenario_type = parts[0]
-        model = '_'.join(parts[2:-1])  # Handle model names with underscores
-        timestamp = parts[-1]
+        # Find 'test' part to split scenario type and model
+        if 'test' not in parts:
+            continue
+            
+        test_index = parts.index('test')
+        scenario_type = '_'.join(parts[:test_index])
+        model = '_'.join(parts[test_index + 1:])
         
         key = (scenario_type, model)
         
-        if key not in latest_results or timestamp > latest_results[key]['timestamp']:
-            latest_results[key] = {
-                'file': file,
-                'timestamp': timestamp,
-                'scenario_type': scenario_type,
-                'model': model
-            }
+        # Get timestamp from file content if available, otherwise use file modification time
+        timestamp = file.stat().st_mtime
+        
+        results[key] = {
+            'file': file,
+            'timestamp': timestamp,
+            'scenario_type': scenario_type,
+            'model': model
+        }
     
     # sort by file
-    latest_results = dict(sorted(latest_results.items(), key=lambda item: item[1]['file']))
+    results = dict(sorted(results.items(), key=lambda item: item[1]['file']))
     
-    return latest_results
+    return results
 
 def load_result_data(file_path):
     """Load and return result data from a JSON file"""
@@ -58,11 +96,11 @@ def load_result_data(file_path):
         print(f"Error loading {file_path}: {e}")
         return None
 
-def organize_results_by_scenario_type(latest_results):
+def organize_results_by_scenario_type(results):
     """Organize results by main scenario type and language for nested tabbed interface"""
     organized = {}
     
-    for (scenario_type, model), info in latest_results.items():
+    for (scenario_type, model), info in results.items():
         data = load_result_data(info['file'])
         if not data:
             continue
@@ -376,6 +414,33 @@ def create_comprehensive_html_report(organized_results):
             line-height: 1.5;
             min-height: 120px;
             background-color: white;
+        }}
+        
+        /* Topic Detection Indicators */
+        .topic-indicators {{
+            padding: 8px 18px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            gap: 10px;
+        }}
+        .indicator {{
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: help;
+        }}
+        .json-indicator {{
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }}
+        .topic-indicator {{
+            background-color: #e8f5e8;
+            color: #388e3c;
         }}
         
         /* Model Toggle Controls */
@@ -756,6 +821,65 @@ def create_comprehensive_html_report(organized_results):
                     </table>
                 </div>"""
             
+            # Add topic detection accuracy table for topic-detection scenarios
+            if main_type == "topic-detection":
+                html_content += f"""
+                <div class="model-summary">
+                    <h3>Topic Detection Accuracy</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Valid JSON Responses</th>
+                                <th>Correct Topics</th>
+                                <th>Topic Accuracy</th>
+                                <th>Avg Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>"""
+                
+                for model, info in models_data.items():
+                    results = info['data']['results']
+                    
+                    # Calculate topic detection metrics
+                    valid_json_count = 0
+                    correct_topics = 0
+                    confidence_scores = []
+                    
+                    for result in results:
+                        response = result['response']
+                        expected = result.get('expected_output')
+                        
+                        analysis = analyze_topic_detection_response(response, expected)
+                        
+                        if analysis['is_valid_json']:
+                            valid_json_count += 1
+                            
+                        if analysis['confidence'] is not None:
+                            confidence_scores.append(analysis['confidence'])
+                            
+                        if analysis['topic_matches']:
+                            correct_topics += 1
+                    
+                    total_scenarios = len(results)
+                    json_percentage = (valid_json_count / total_scenarios) * 100 if total_scenarios else 0
+                    topic_accuracy = (correct_topics / total_scenarios) * 100 if total_scenarios else 0
+                    avg_confidence = sum(confidence_scores) / len(confidence_scores) if confidence_scores else 0
+                    
+                    html_content += f"""
+                            <tr>
+                                <td><strong>{model}</strong></td>
+                                <td>{valid_json_count}/{total_scenarios} ({json_percentage:.1f}%)</td>
+                                <td>{correct_topics}/{total_scenarios}</td>
+                                <td>{topic_accuracy:.1f}%</td>
+                                <td>{avg_confidence:.1f}</td>
+                            </tr>"""
+                
+                html_content += """
+                        </tbody>
+                    </table>
+                </div>"""
+            
             # Add model toggle controls
             models_list = list(models_data.keys())
             html_content += f"""
@@ -881,9 +1005,36 @@ def create_comprehensive_html_report(organized_results):
                             <div class="responses-container {grid_class}">"""
                 
                 for model, response in data['responses'].items():
+                    # Add topic detection analysis for topic-detection scenarios
+                    topic_analysis_html = ""
+                    if main_type == "topic-detection" and data['expected_output']:
+                        analysis = analyze_topic_detection_response(response, data['expected_output'])
+                        
+                        # JSON validity indicator
+                        json_icon = "✅" if analysis['is_valid_json'] else "❌"
+                        json_status = "Valid JSON" if analysis['is_valid_json'] else "Invalid JSON"
+                        
+                        # Topic match indicator
+                        if analysis['is_valid_json']:
+                            topic_icon = "✅" if analysis['topic_matches'] else "❌"
+                            topic_status = "Topic Match" if analysis['topic_matches'] else "Topic Mismatch"
+                        else:
+                            topic_icon = "❓"
+                            topic_status = "Cannot Check (Invalid JSON)"
+                        
+                        topic_analysis_html = f"""
+                                    <div class="topic-indicators">
+                                        <span class="indicator json-indicator" title="{json_status}">
+                                            {json_icon} JSON
+                                        </span>
+                                        <span class="indicator topic-indicator" title="{topic_status}">
+                                            {topic_icon} Topic
+                                        </span>
+                                    </div>"""
+                    
                     html_content += f"""
                                 <div class="response" data-model="{model}">
-                                    <div class="model-name">{model}</div>
+                                    <div class="model-name">{model}</div>{topic_analysis_html}
                                     <div class="model-response">{response}</div>
                                 </div>"""
                 
@@ -995,15 +1146,15 @@ def main():
     print("=== LLM COMPREHENSIVE COMPARISON TOOL ===")
     print("Generating report for all available scenario types with latest results...")
     
-    # Get latest results for each model/scenario combination
-    latest_results = get_latest_results_by_model_and_scenario()
+    # Get results for each model/scenario combination
+    results = get_latest_results_by_model_and_scenario()
     
-    if not latest_results:
+    if not results:
         print("No test result files found.")
         return
     
     # Organize results by scenario type
-    organized_results = organize_results_by_scenario_type(latest_results)
+    organized_results = organize_results_by_scenario_type(results)
     
     if not organized_results:
         print("No valid test results found.")
