@@ -1,0 +1,821 @@
+{
+  "model_type": "gemma3-12B",
+  "scenario_type": "translation-en-fr",
+  "timestamp": "20250701-183109",
+  "test_type": "translation-en-fr",
+  "language": "en",
+  "results": [
+    {
+      "scenario_id": "translation_en_fr_001",
+      "scenario_name": "Simple Greeting - Easy",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Hello, how are you today?\"",
+      "response": "Here are a few options for translating \"Hello, how are you today?\" into French, with slightly different nuances:\n\n*   **Bonjour, comment allez-vous aujourd'hui ?** (Formal - used with people you don't know well or in a professional setting)\n*   **Salut, comment vas-tu aujourd'hui ?** (Informal - used with friends, family",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.97,
+        "tokens_per_second": 5.73,
+        "time_to_first_token_seconds": 1.397,
+        "prompt_tokens": 31,
+        "completion_tokens": 80,
+        "total_tokens": 111,
+        "response_length_chars": 322,
+        "response_length_words": 50,
+        "chars_per_second": 23.05,
+        "words_per_second": 3.58
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_002",
+      "scenario_name": "Restaurant Order - Easy",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"I would like to order a coffee and a piece of cake, please.\"",
+      "response": "Here are a few options for translating \"I would like to order a coffee and a piece of cake, please\" into French, with slightly different nuances:\n\n**1. Most Common & Polite:**\n\n*   **\"Je voudrais commander un café et une part de gâteau, s'il vous plaît.\"**\n    *   *Je voudrais* - I would like (very",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 48.102,
+        "tokens_per_second": 1.66,
+        "time_to_first_token_seconds": 4.81,
+        "prompt_tokens": 39,
+        "completion_tokens": 80,
+        "total_tokens": 119,
+        "response_length_chars": 299,
+        "response_length_words": 53,
+        "chars_per_second": 6.22,
+        "words_per_second": 1.1
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_003",
+      "scenario_name": "Weather Description - Medium",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The weather forecast predicts heavy rainfall and thunderstorms throughout the weekend, so we should probably postpone our hiking trip.\"",
+      "response": "Here are a few options for translating \"The weather forecast predicts heavy rainfall and thunderstorms throughout the weekend, so we should probably postpone our hiking trip\" into French, with slightly different nuances:\n\n**Option 1 (Most Common & Natural):**\n\n\"Les prévisions météo annoncent de fortes pluies et des orages tout le week-end, donc il vaudrait mieux reporter notre",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.757,
+        "tokens_per_second": 5.82,
+        "time_to_first_token_seconds": 1.376,
+        "prompt_tokens": 45,
+        "completion_tokens": 80,
+        "total_tokens": 125,
+        "response_length_chars": 379,
+        "response_length_words": 57,
+        "chars_per_second": 27.55,
+        "words_per_second": 4.14
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_004",
+      "scenario_name": "Technology Discussion - Medium",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The latest smartphone features an advanced camera system with artificial intelligence capabilities that can automatically enhance photo quality in various lighting conditions.\"",
+      "response": "Here are a few options for translating \"The latest smartphone features an advanced camera system with artificial intelligence capabilities that can automatically enhance photo quality in various lighting conditions\" into French, with slightly different nuances:\n\n**Option 1 (Most Common & Natural):**\n\n\"Le dernier smartphone est doté d'un système de caméra avancé avec des capacités d'intelligence artificielle qui peuvent améliorer automatiquement la qualité des",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 14.098,
+        "tokens_per_second": 5.67,
+        "time_to_first_token_seconds": 1.41,
+        "prompt_tokens": 47,
+        "completion_tokens": 80,
+        "total_tokens": 127,
+        "response_length_chars": 463,
+        "response_length_words": 63,
+        "chars_per_second": 32.84,
+        "words_per_second": 4.47
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_005",
+      "scenario_name": "Academic Text - Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The interdisciplinary approach to sustainable development requires collaboration between environmental scientists, economists, and policy makers to address the complex challenges of climate change while maintaining economic growth.\"",
+      "response": "Here are a few options for translating the sentence \"The interdisciplinary approach to sustainable development requires collaboration between environmental scientists, economists, and policy makers to address the complex challenges of climate change while maintaining economic growth\" into French, with slightly different nuances:\n\n**Option 1 (More Formal & Precise):**\n\n\"Une approche interdisciplinaire du développement durable exige une collaboration entre les scientifiques de l'environnement",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 14.13,
+        "tokens_per_second": 5.66,
+        "time_to_first_token_seconds": 1.413,
+        "prompt_tokens": 55,
+        "completion_tokens": 80,
+        "total_tokens": 135,
+        "response_length_chars": 495,
+        "response_length_words": 62,
+        "chars_per_second": 35.03,
+        "words_per_second": 4.39
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_006",
+      "scenario_name": "Idiomatic Expression - Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Don't count your chickens before they hatch - we should wait for the official results before celebrating our success.\"",
+      "response": "Here are a few options for translating \"Don't count your chickens before they hatch - we should wait for the official results before celebrating our success\" into French, with slightly different nuances:\n\n**Option 1 (Most Common & Closest Equivalent):**\n\n\"Il ne faut pas vendre la peau de l'ours avant de l'avoir tué - attendons les résultats officiels avant de",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.988,
+        "tokens_per_second": 5.72,
+        "time_to_first_token_seconds": 1.399,
+        "prompt_tokens": 46,
+        "completion_tokens": 80,
+        "total_tokens": 126,
+        "response_length_chars": 361,
+        "response_length_words": 59,
+        "chars_per_second": 25.81,
+        "words_per_second": 4.22
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_007",
+      "scenario_name": "Medical Context - Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The patient exhibits symptoms of acute bronchitis, including persistent cough, chest tightness, and difficulty breathing, which may require immediate medical intervention.\"",
+      "response": "Here are a few options for translating \"The patient exhibits symptoms of acute bronchitis, including persistent cough, chest tightness, and difficulty breathing, which may require immediate medical intervention\" into French, with varying degrees of formality and nuance.  I'll include explanations of the choices made.\n\n**Option 1 (Formal & Precise - Recommended for medical documentation):**\n\n\"Le patient présente des symptômes de",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 14.115,
+        "tokens_per_second": 5.67,
+        "time_to_first_token_seconds": 1.411,
+        "prompt_tokens": 50,
+        "completion_tokens": 80,
+        "total_tokens": 130,
+        "response_length_chars": 431,
+        "response_length_words": 60,
+        "chars_per_second": 30.54,
+        "words_per_second": 4.25
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_008",
+      "scenario_name": "Short Question - Easy",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Where is the nearest train station?\"",
+      "response": "Here are a few options for translating \"Where is the nearest train station?\" into French, with slightly different nuances:\n\n*   **Où est la gare la plus proche ?** (This is the most common and generally best translation. It's direct and polite.)\n*   **Où se trouve la gare la plus proche ?** (This is slightly more formal than the first option",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.087,
+        "tokens_per_second": 6.11,
+        "time_to_first_token_seconds": 1.309,
+        "prompt_tokens": 31,
+        "completion_tokens": 80,
+        "total_tokens": 111,
+        "response_length_chars": 343,
+        "response_length_words": 60,
+        "chars_per_second": 26.21,
+        "words_per_second": 4.58
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_009",
+      "scenario_name": "Literary Text - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The melancholic autumn wind whispered through the golden leaves, carrying with it the bittersweet memories of summer's fleeting embrace, as if nature itself mourned the inevitable passage of time.\"",
+      "response": "Here are a few options for translating \"The melancholic autumn wind whispered through the golden leaves, carrying with it the bittersweet memories of summer's fleeting embrace, as if nature itself mourned the inevitable passage of time,\" into French, with varying degrees of formality and poetic flair.  I'll provide explanations for the choices made.\n\n**Option 1 (More Formal & Poetic):**",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 14.138,
+        "tokens_per_second": 5.66,
+        "time_to_first_token_seconds": 1.414,
+        "prompt_tokens": 60,
+        "completion_tokens": 80,
+        "total_tokens": 140,
+        "response_length_chars": 389,
+        "response_length_words": 59,
+        "chars_per_second": 27.51,
+        "words_per_second": 4.17
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_010",
+      "scenario_name": "Business Context - Medium",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Our quarterly sales report indicates a significant increase in revenue, primarily driven by strong performance in the European markets and successful product launches.\"",
+      "response": "Here are a few options for translating \"Our quarterly sales report indicates a significant increase in revenue, primarily driven by strong performance in the European markets and successful product launches\" into French, with slightly different nuances:\n\n**Option 1 (Most Common & Formal):**\n\n\"Notre rapport trimestriel des ventes indique une augmentation significative des revenus, principalement grâce à de solides performances sur les marchés européens et",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.872,
+        "tokens_per_second": 5.77,
+        "time_to_first_token_seconds": 1.387,
+        "prompt_tokens": 49,
+        "completion_tokens": 80,
+        "total_tokens": 129,
+        "response_length_chars": 458,
+        "response_length_words": 64,
+        "chars_per_second": 33.02,
+        "words_per_second": 4.61
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_011",
+      "scenario_name": "Travel Directions - Easy",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Take the second street on the right and continue straight for about 200 meters.\"",
+      "response": "Here are a few options for translating \"Take the second street on the right and continue straight for about 200 meters\" into French, with slightly different nuances:\n\n**Option 1 (Most common and natural):**\n\n\"Prenez la deuxième rue à droite et continuez tout droit sur environ 200 mètres.\"\n\n*   **Prenez:** Take (imperative)",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.427,
+        "tokens_per_second": 5.96,
+        "time_to_first_token_seconds": 1.343,
+        "prompt_tokens": 42,
+        "completion_tokens": 80,
+        "total_tokens": 122,
+        "response_length_chars": 324,
+        "response_length_words": 51,
+        "chars_per_second": 24.13,
+        "words_per_second": 3.8
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_012",
+      "scenario_name": "Emergency Situation - Medium",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Please call an ambulance immediately! There has been a serious accident and someone needs urgent medical attention.\"",
+      "response": "Here are a few options for translating \"Please call an ambulance immediately! There has been a serious accident and someone needs urgent medical attention.\" into French, with slight variations in formality and emphasis:\n\n**Option 1 (Most Common & Direct):**\n\n\"Veuillez appeler une ambulance immédiatement ! Il y a eu un accident grave et quelqu'un a besoin d'une assistance médicale urgente",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.717,
+        "tokens_per_second": 5.83,
+        "time_to_first_token_seconds": 1.372,
+        "prompt_tokens": 43,
+        "completion_tokens": 80,
+        "total_tokens": 123,
+        "response_length_chars": 390,
+        "response_length_words": 60,
+        "chars_per_second": 28.43,
+        "words_per_second": 4.37
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_013",
+      "scenario_name": "Scientific Research - Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The hypothesis postulates that quantum entanglement phenomena could potentially revolutionize information processing capabilities in next-generation computing architectures.\"",
+      "response": "Here are a few options for translating \"The hypothesis postulates that quantum entanglement phenomena could potentially revolutionize information processing capabilities in next-generation computing architectures\" into French, with slightly different nuances.  I'll provide explanations of the choices afterward.\n\n**Option 1 (Formal & Precise):**\n\n\"L'hypothèse postule que les phénomènes d'intrication quantique pourraient potentiellement révolution",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.763,
+        "tokens_per_second": 5.81,
+        "time_to_first_token_seconds": 1.376,
+        "prompt_tokens": 44,
+        "completion_tokens": 80,
+        "total_tokens": 124,
+        "response_length_chars": 449,
+        "response_length_words": 52,
+        "chars_per_second": 32.62,
+        "words_per_second": 3.78
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_014",
+      "scenario_name": "Cooking Instructions - Medium",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Preheat the oven to 180 degrees Celsius, mix the ingredients thoroughly, and bake for approximately 25 minutes until golden brown.\"",
+      "response": "Here are a few options for translating \"Preheat the oven to 180 degrees Celsius, mix the ingredients thoroughly, and bake for approximately 25 minutes until golden brown\" into French, with slightly different nuances:\n\n**Option 1 (Most Common & Natural):**\n\n\"Préchauffez le four à 180 degrés Celsius, mélangez bien les ingrédients, et",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.893,
+        "tokens_per_second": 5.76,
+        "time_to_first_token_seconds": 1.389,
+        "prompt_tokens": 53,
+        "completion_tokens": 80,
+        "total_tokens": 133,
+        "response_length_chars": 333,
+        "response_length_words": 51,
+        "chars_per_second": 23.97,
+        "words_per_second": 3.67
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_015",
+      "scenario_name": "Legal Document - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The contracting parties hereby agree to the terms and conditions stipulated herein, whereby any breach of contract shall result in immediate termination and potential legal ramifications.\"",
+      "response": "Here are a few options for translating \"The contracting parties hereby agree to the terms and conditions stipulated herein, whereby any breach of contract shall result in immediate termination and potential legal ramifications\" into French, with varying degrees of formality and nuance.  I'll provide explanations for each to help you choose the best fit for your context.\n\n**Option 1 (Formal & Precise - Best for Legal Documents",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.921,
+        "tokens_per_second": 5.75,
+        "time_to_first_token_seconds": 1.392,
+        "prompt_tokens": 52,
+        "completion_tokens": 80,
+        "total_tokens": 132,
+        "response_length_chars": 429,
+        "response_length_words": 67,
+        "chars_per_second": 30.82,
+        "words_per_second": 4.81
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_016",
+      "scenario_name": "Sports Commentary - Medium",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The goalkeeper made an incredible save in the final seconds, securing the victory for his team in this thrilling championship match.\"",
+      "response": "Here are a few options for translating \"The goalkeeper made an incredible save in the final seconds, securing the victory for his team in this thrilling championship match\" into French, with slight variations in style and emphasis:\n\n**Option 1 (Most common and natural):**\n\n\"Le gardien a réalisé un arrêt incroyable dans les dernières secondes, assurant ainsi la victoire de son équipe dans ce match",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.987,
+        "tokens_per_second": 5.72,
+        "time_to_first_token_seconds": 1.399,
+        "prompt_tokens": 47,
+        "completion_tokens": 80,
+        "total_tokens": 127,
+        "response_length_chars": 399,
+        "response_length_words": 64,
+        "chars_per_second": 28.53,
+        "words_per_second": 4.58
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_017",
+      "scenario_name": "Simple Apology - Easy",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"I'm sorry for being late.\"",
+      "response": "Here are a few options for translating \"I'm sorry for being late\" into French, with slight variations in formality:\n\n*   **Formal:** \"Je suis désolé(e) d'être en retard.\" (This is the most common and generally safe option.)\n    *   Use \"désolé\" if you are male.\n    *   Use \"désolée\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.54,
+        "tokens_per_second": 5.91,
+        "time_to_first_token_seconds": 1.354,
+        "prompt_tokens": 32,
+        "completion_tokens": 80,
+        "total_tokens": 112,
+        "response_length_chars": 283,
+        "response_length_words": 46,
+        "chars_per_second": 20.9,
+        "words_per_second": 3.4
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_018",
+      "scenario_name": "Historical Text - Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The Industrial Revolution fundamentally transformed society, ushering in an era of unprecedented technological advancement and social change that continues to influence our modern world.\"",
+      "response": "Here are a few options for translating \"The Industrial Revolution fundamentally transformed society, ushering in an era of unprecedented technological advancement and social change that continues to influence our modern world\" into French, with varying degrees of formality and nuance.  I'll include explanations of the choices made.\n\n**Option 1 (Formal & Comprehensive - Good for academic/historical context):**\n\n\"La Révolution",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 14.006,
+        "tokens_per_second": 5.71,
+        "time_to_first_token_seconds": 1.401,
+        "prompt_tokens": 51,
+        "completion_tokens": 80,
+        "total_tokens": 131,
+        "response_length_chars": 428,
+        "response_length_words": 59,
+        "chars_per_second": 30.56,
+        "words_per_second": 4.21
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_019",
+      "scenario_name": "Philosophical Quote - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The unexamined life is not worth living, for it is through self-reflection and contemplation that we discover our true purpose and meaning in existence.\"",
+      "response": "Here are a few options for translating \"The unexamined life is not worth living, for it is through self-reflection and contemplation that we discover our true purpose and meaning in existence\" into French, with slightly different nuances:\n\n**Option 1 (Most Literal & Common):**\n\n\"Une vie non examinée ne vaut pas la peine d'être vécue, car c'est",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.987,
+        "tokens_per_second": 5.72,
+        "time_to_first_token_seconds": 1.399,
+        "prompt_tokens": 53,
+        "completion_tokens": 80,
+        "total_tokens": 133,
+        "response_length_chars": 345,
+        "response_length_words": 56,
+        "chars_per_second": 24.67,
+        "words_per_second": 4.0
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_020",
+      "scenario_name": "Environmental News - Medium",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Renewable energy sources such as solar and wind power are becoming increasingly cost-effective alternatives to traditional fossil fuels in many regions worldwide.\"",
+      "response": "Here are a few options for translating \"Renewable energy sources such as solar and wind power are becoming increasingly cost-effective alternatives to traditional fossil fuels in many regions worldwide\" into French, with slight variations in style and emphasis:\n\n**Option 1 (Most Common & Balanced):**\n\n\"Les sources d'énergie renouvelables, telles que l'énergie solaire et éolienne, deviennent de",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 14.177,
+        "tokens_per_second": 5.64,
+        "time_to_first_token_seconds": 1.418,
+        "prompt_tokens": 50,
+        "completion_tokens": 80,
+        "total_tokens": 130,
+        "response_length_chars": 396,
+        "response_length_words": 56,
+        "chars_per_second": 27.93,
+        "words_per_second": 3.95
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_021",
+      "scenario_name": "English Idiom - Break a leg - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"You have your big interview today? Break a leg!\"",
+      "response": "Here are a few options for translating \"You have your big interview today? Break a leg!\" into French, with slightly different nuances:\n\n**1. Most common and natural:**\n\n*   **\"Tu as ton grand entretien aujourd'hui ? Bonne chance !\"** (Pronounced: Too ah ton grand on-tray-uh oh-joor-dwee? Bon shon-s",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.571,
+        "tokens_per_second": 5.9,
+        "time_to_first_token_seconds": 1.357,
+        "prompt_tokens": 35,
+        "completion_tokens": 80,
+        "total_tokens": 115,
+        "response_length_chars": 299,
+        "response_length_words": 47,
+        "chars_per_second": 22.03,
+        "words_per_second": 3.46
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_022",
+      "scenario_name": "English Idiom - Spill the beans - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Come on, spill the beans! What really happened at the party?\"",
+      "response": "Here are a few options for translating \"Come on, spill the beans! What really happened at the party?\" into French, with slightly different nuances:\n\n**1. (Most common and natural)**\n\n*   **\"Allez, crache le morceau ! Qu'est-ce qui s'est vraiment passé à la soirée ?\"**\n    *   \"Allez\" - Come on",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.631,
+        "tokens_per_second": 5.87,
+        "time_to_first_token_seconds": 1.363,
+        "prompt_tokens": 38,
+        "completion_tokens": 80,
+        "total_tokens": 118,
+        "response_length_chars": 294,
+        "response_length_words": 49,
+        "chars_per_second": 21.57,
+        "words_per_second": 3.59
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_023",
+      "scenario_name": "English Sarcasm - That's just perfect - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"My phone died, I missed my train, and now it's raining. That's just perfect!\"",
+      "response": "Here are a few options for translating \"My phone died, I missed my train, and now it's raining. That's just perfect!\" into French, with slightly different nuances:\n\n**Option 1 (Most common and natural):**\n\n\"Mon téléphone est tombé en panne, j'ai raté mon train, et maintenant il pleut. C'est parfait !\"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.889,
+        "tokens_per_second": 5.76,
+        "time_to_first_token_seconds": 1.389,
+        "prompt_tokens": 46,
+        "completion_tokens": 80,
+        "total_tokens": 126,
+        "response_length_chars": 302,
+        "response_length_words": 50,
+        "chars_per_second": 21.74,
+        "words_per_second": 3.6
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_024",
+      "scenario_name": "English Idiom - Piece of cake - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Don't worry about the test, it'll be a piece of cake!\"",
+      "response": "Here are a few options for translating \"Don't worry about the test, it'll be a piece of cake!\" into French, with slightly different nuances:\n\n**1. (Most common and natural):**\n\n*   **\"Ne t'inquiète pas pour l'examen, ce sera du gâteau !\"**  (Literally: \"Don't worry about the exam",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.733,
+        "tokens_per_second": 5.83,
+        "time_to_first_token_seconds": 1.373,
+        "prompt_tokens": 41,
+        "completion_tokens": 80,
+        "total_tokens": 121,
+        "response_length_chars": 280,
+        "response_length_words": 46,
+        "chars_per_second": 20.39,
+        "words_per_second": 3.35
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_025",
+      "scenario_name": "English Idiom - Hit the nail on the head - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Your analysis really hit the nail on the head!\"",
+      "response": "Here are a few options for translating \"Your analysis really hit the nail on the head!\" into French, with slightly different nuances:\n\n**1. (Most common and idiomatic) - \"Votre analyse a tout à fait raison!\"**\n\n*   This is the closest equivalent idiomatically.  It means \"Your analysis is completely right!\" and conveys the same sense of accuracy and insight.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.602,
+        "tokens_per_second": 5.88,
+        "time_to_first_token_seconds": 1.36,
+        "prompt_tokens": 34,
+        "completion_tokens": 80,
+        "total_tokens": 114,
+        "response_length_chars": 359,
+        "response_length_words": 58,
+        "chars_per_second": 26.39,
+        "words_per_second": 4.26
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_026",
+      "scenario_name": "English Idiom - Barking up the wrong tree - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"If you think I'm the one who broke it, you're barking up the wrong tree.\"",
+      "response": "Here are a few options for translating \"If you think I'm the one who broke it, you're barking up the wrong tree\" into French, with slightly different nuances:\n\n**1. (Most common and closest in meaning):**\n\n*   **\"Si vous croyez que c'est moi qui l'ai cassé, vous vous trompez d'endroit.\"**",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.707,
+        "tokens_per_second": 5.84,
+        "time_to_first_token_seconds": 1.371,
+        "prompt_tokens": 45,
+        "completion_tokens": 80,
+        "total_tokens": 125,
+        "response_length_chars": 289,
+        "response_length_words": 49,
+        "chars_per_second": 21.08,
+        "words_per_second": 3.57
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_027",
+      "scenario_name": "English Slang - Ghosting - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"After our date, she just started ghosting me completely.\"",
+      "response": "Here are a few options for translating \"After our date, she just started ghosting me completely\" into French, with slightly different nuances:\n\n**1. (Most common and natural) - Emphasizes the suddenness and abruptness:**\n\n*   \"Après notre rendez-vous, elle a simplement commencé à me ghoster complètement.\"\n\n    *   This is a very direct translation,",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.722,
+        "tokens_per_second": 5.83,
+        "time_to_first_token_seconds": 1.372,
+        "prompt_tokens": 36,
+        "completion_tokens": 80,
+        "total_tokens": 116,
+        "response_length_chars": 350,
+        "response_length_words": 52,
+        "chars_per_second": 25.51,
+        "words_per_second": 3.79
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_028",
+      "scenario_name": "English Idiom - Cold feet - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"He got cold feet right before signing the contract.\"",
+      "response": "Here are a few options for translating \"He got cold feet right before signing the contract\" into French, with slightly different nuances:\n\n**1. (Most common and natural) - \"Il a eu le cafard juste avant de signer le contrat.\"**\n\n*   **\"Il a eu le cafard\"** literally means \"He got the cockroach,\" but idiomatically it means \"",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.535,
+        "tokens_per_second": 5.91,
+        "time_to_first_token_seconds": 1.354,
+        "prompt_tokens": 34,
+        "completion_tokens": 80,
+        "total_tokens": 114,
+        "response_length_chars": 325,
+        "response_length_words": 56,
+        "chars_per_second": 24.01,
+        "words_per_second": 4.14
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_029",
+      "scenario_name": "English Idiom - Pull my leg - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"You're pulling my leg, right? That can't be true!\"",
+      "response": "Here are a few options for translating \"You're pulling my leg, right? That can't be true!\" into French, with slightly different nuances:\n\n**1. Most common and natural:**\n\n*   **\"Tu me trolles, non ? Ça ne peut pas être vrai !\"** - This is the most modern and colloquial option, using \"troller\" which is borrowed from",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.582,
+        "tokens_per_second": 5.89,
+        "time_to_first_token_seconds": 1.358,
+        "prompt_tokens": 40,
+        "completion_tokens": 80,
+        "total_tokens": 120,
+        "response_length_chars": 316,
+        "response_length_words": 55,
+        "chars_per_second": 23.27,
+        "words_per_second": 4.05
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_030",
+      "scenario_name": "English Expression - On cloud nine - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"She's been on cloud nine since she got accepted to university.\"",
+      "response": "Here are a few options for translating \"She's been on cloud nine since she got accepted to university\" into French, with slightly different nuances:\n\n**1. (Most common and natural) - Using an idiom similar to \"cloud nine\":**\n\n*   **\"Elle est au septième ciel depuis qu'elle a été acceptée à l'université.\"**  (Literally",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.627,
+        "tokens_per_second": 5.87,
+        "time_to_first_token_seconds": 1.363,
+        "prompt_tokens": 38,
+        "completion_tokens": 80,
+        "total_tokens": 118,
+        "response_length_chars": 319,
+        "response_length_words": 51,
+        "chars_per_second": 23.41,
+        "words_per_second": 3.74
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_031",
+      "scenario_name": "English Idiom - Make a mountain out of a molehill - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Stop making a mountain out of a molehill! It was just a small error.\"",
+      "response": "Here are a few options for translating \"Stop making a mountain out of a molehill! It was just a small error.\" into French, with slightly different nuances:\n\n**Option 1 (Most Common & Natural):**\n\n*   **\"Arrête de faire une montagne de rien ! C'était juste une petite erreur.\"**\n    *   This is the most direct and commonly used",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.771,
+        "tokens_per_second": 5.81,
+        "time_to_first_token_seconds": 1.377,
+        "prompt_tokens": 41,
+        "completion_tokens": 80,
+        "total_tokens": 121,
+        "response_length_chars": 327,
+        "response_length_words": 56,
+        "chars_per_second": 23.74,
+        "words_per_second": 4.07
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_032",
+      "scenario_name": "English Business Jargon - Circle back - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Let me circle back with my team and touch base with you next week.\"",
+      "response": "Here are a few options for translating \"Let me circle back with my team and touch base with you next week\" into French, with slightly different nuances:\n\n**Option 1 (Most common and natural):**\n\n*   **\"Je vais me renseigner auprès de mon équipe et je reprends contact avec vous la semaine prochaine.\"**\n    *   *Je vais me rense",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.472,
+        "tokens_per_second": 5.94,
+        "time_to_first_token_seconds": 1.347,
+        "prompt_tokens": 39,
+        "completion_tokens": 80,
+        "total_tokens": 119,
+        "response_length_chars": 328,
+        "response_length_words": 56,
+        "chars_per_second": 24.35,
+        "words_per_second": 4.16
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_033",
+      "scenario_name": "English Idiom - Down the drain - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"All our efforts went down the drain when the funding was cut.\"",
+      "response": "Here are a few options for translating \"All our efforts went down the drain when the funding was cut\" into French, with slightly different nuances:\n\n**1. (Most common & direct):**\n\n*   **\"Tous nos efforts ont été perdus quand le financement a été coupé.\"**\n    *   *Tous nos efforts* - All our efforts\n    *   *ont été",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.271,
+        "tokens_per_second": 6.03,
+        "time_to_first_token_seconds": 1.327,
+        "prompt_tokens": 37,
+        "completion_tokens": 80,
+        "total_tokens": 117,
+        "response_length_chars": 318,
+        "response_length_words": 54,
+        "chars_per_second": 23.96,
+        "words_per_second": 4.07
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_034",
+      "scenario_name": "English Idiom - Bite the bullet - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The car is getting old, but we'll have to bite the bullet and buy a new one.\"",
+      "response": "Here are a few options for translating \"The car is getting old, but we'll have to bite the bullet and buy a new one\" into French, with slightly different nuances:\n\n**1. Most Common & Natural:**\n\n*   **\"La voiture prend de l'âge, mais il va falloir se résigner à en acheter une nouvelle.\"**\n    *   *La",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.663,
+        "tokens_per_second": 5.86,
+        "time_to_first_token_seconds": 1.366,
+        "prompt_tokens": 45,
+        "completion_tokens": 80,
+        "total_tokens": 125,
+        "response_length_chars": 301,
+        "response_length_words": 54,
+        "chars_per_second": 22.03,
+        "words_per_second": 3.95
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_035",
+      "scenario_name": "English Slang - Throw shade - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"She was throwing shade at her ex during the whole party.\"",
+      "response": "Here are a few options for translating \"She was throwing shade at her ex during the whole party\" into French, with varying degrees of formality and emphasis:\n\n**1. (Most common and natural-sounding, capturing the slangy feel)**\n\n*   **\"Elle n'arrêtait pas de critiquer son ex pendant toute la soirée.\"** (She didn't stop criticizing her",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.373,
+        "tokens_per_second": 5.98,
+        "time_to_first_token_seconds": 1.337,
+        "prompt_tokens": 36,
+        "completion_tokens": 80,
+        "total_tokens": 116,
+        "response_length_chars": 336,
+        "response_length_words": 53,
+        "chars_per_second": 25.12,
+        "words_per_second": 3.96
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_036",
+      "scenario_name": "English Idiom - Beat around the bush - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"Stop beating around the bush and tell me what you want!\"",
+      "response": "Here are a few options for translating \"Stop beating around the bush and tell me what you want!\" into French, with slightly different nuances:\n\n**1. (Most common and direct)**\n\n*   **\"Arrête de tourner autour du pot et dis-moi ce que tu veux !\"**\n    *   \"Arrête de\" - Stop\n    *   \"tourner autour du",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.429,
+        "tokens_per_second": 5.96,
+        "time_to_first_token_seconds": 1.343,
+        "prompt_tokens": 36,
+        "completion_tokens": 80,
+        "total_tokens": 116,
+        "response_length_chars": 300,
+        "response_length_words": 52,
+        "chars_per_second": 22.34,
+        "words_per_second": 3.87
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_037",
+      "scenario_name": "English Tech Slang - It's not a bug, it's a feature - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"The app crashes randomly? It's not a bug, it's a feature!\"",
+      "response": "Here are a few options for translating \"The app crashes randomly? It's not a bug, it's a feature!\" into French, with slightly different nuances:\n\n**Option 1 (Most literal and commonly used):**\n\n\"L'application plante aléatoirement ? Ce n'est pas un bug, c'est une fonctionnalité !\"\n\n*   **L'application plante:**",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.784,
+        "tokens_per_second": 5.8,
+        "time_to_first_token_seconds": 1.378,
+        "prompt_tokens": 42,
+        "completion_tokens": 80,
+        "total_tokens": 122,
+        "response_length_chars": 311,
+        "response_length_words": 47,
+        "chars_per_second": 22.56,
+        "words_per_second": 3.41
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_038",
+      "scenario_name": "English Idiom - When pigs fly - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"He'll apologize when pigs fly!\"",
+      "response": "Here are a few options for translating \"He'll apologize when pigs fly!\" into French, with slightly different nuances:\n\n*   **Il s'excusera quand les cochons voleront !** (This is the most literal and common translation. It preserves the imagery perfectly.)\n*   **Il s'excusera, quand les cochons voleront !** (Adding the",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.549,
+        "tokens_per_second": 5.9,
+        "time_to_first_token_seconds": 1.355,
+        "prompt_tokens": 32,
+        "completion_tokens": 80,
+        "total_tokens": 112,
+        "response_length_chars": 320,
+        "response_length_words": 49,
+        "chars_per_second": 23.62,
+        "words_per_second": 3.62
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_039",
+      "scenario_name": "English Idiom - Kick the bucket - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"My old computer finally kicked the bucket last night.\"",
+      "response": "Here are a few options for translating \"My old computer finally kicked the bucket last night\" into French, with slightly different nuances:\n\n**1. (Most common and natural):**\n\n*   **\"Mon vieux ordinateur a finalement rendu l'âme hier soir.\"**\n    *   \"Rendre l'âme\" is a common idiom for \"to die\" or \"to give up",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.465,
+        "tokens_per_second": 5.94,
+        "time_to_first_token_seconds": 1.346,
+        "prompt_tokens": 34,
+        "completion_tokens": 80,
+        "total_tokens": 114,
+        "response_length_chars": 311,
+        "response_length_words": 51,
+        "chars_per_second": 23.1,
+        "words_per_second": 3.79
+      }
+    },
+    {
+      "scenario_id": "translation_en_fr_040",
+      "scenario_name": "English Cultural Expression - Monday Blues - Very Hard",
+      "prompt": "Source language: English\nTarget language: French\nText to translate: \"I've got a serious case of the Monday blues today.\"",
+      "response": "Here are a few options for translating \"I've got a serious case of the Monday blues today\" into French, with slightly different nuances:\n\n**1. (Most common & natural):**\n\n*   **\"J'ai vraiment le blues ce lundi.\"** (Literally: \"I really have the blues this Monday.\") - This is the most straightforward and widely understood translation.",
+      "personality": "You are a professional translator. Translate the given text from the source language to the target language. Provide only the translated text without any additional explanation or formatting.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 13.734,
+        "tokens_per_second": 5.82,
+        "time_to_first_token_seconds": 1.373,
+        "prompt_tokens": 37,
+        "completion_tokens": 80,
+        "total_tokens": 117,
+        "response_length_chars": 335,
+        "response_length_words": 53,
+        "chars_per_second": 24.39,
+        "words_per_second": 3.86
+      }
+    }
+  ],
+  "source_language": "en",
+  "target_language": "fr",
+  "performance_summary": {
+    "model_download_time_seconds": 0.114,
+    "model_load_time_seconds": 6.57,
+    "total_test_time_seconds": 583.792,
+    "total_scenarios_tested": 40,
+    "average_generation_time_seconds": 14.595,
+    "average_tokens_per_second": 5.72,
+    "total_tokens_generated": 4886,
+    "total_generation_time_seconds": 583.785
+  }
+}
