@@ -408,44 +408,110 @@ def test_scenario(llm, scenario, model_type, scenario_type):
         print(f"Error generating response: {e}")
         return None
 
-def save_results(results, model_type, scenario_type, performance_summary=None):
-    """Save test results to a JSON file"""
+def load_existing_results(model_type, scenario_type):
+    """Load existing results file if it exists"""
+    results_dir = Path("results")
+    if not results_dir.exists():
+        return None
+    
+    # Look for existing results file (without timestamp)
+    filename = f"{scenario_type}_test_{model_type}.json"
+    filepath = results_dir / filename
+    
+    if filepath.exists():
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Warning: Could not load existing results file {filepath}: {e}")
+            return None
+    
+    return None
+
+def get_tested_scenario_ids(existing_results):
+    """Extract scenario IDs that have already been tested"""
+    if not existing_results or 'results' not in existing_results:
+        return set()
+    
+    tested_ids = set()
+    for result in existing_results['results']:
+        if 'scenario_id' in result:
+            tested_ids.add(result['scenario_id'])
+    
+    return tested_ids
+
+def save_results(results, model_type, scenario_type, performance_summary=None, existing_results=None):
+    """Save test results to a JSON file, extending existing file if present"""
     # Create results directory if it doesn't exist
     results_dir = Path("results")
     results_dir.mkdir(exist_ok=True)
     
-    # Create filename with timestamp
-    timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    filename = f"{scenario_type}_test_{model_type}_{timestamp}.json"
+    # Create filename without timestamp for persistence
+    filename = f"{scenario_type}_test_{model_type}.json"
     filepath = results_dir / filename
     
     # Get scenario config for language information
     scenario_config = SCENARIO_CONFIGS.get(scenario_type, {})
     
-    # Prepare data to save
-    test_data = {
-        "model_type": model_type,
-        "scenario_type": scenario_type,
-        "timestamp": timestamp,
-        "test_type": scenario_type,
-        "language": scenario_config.get("language", "unknown"),
-        "results": results
-    }
-    
-    # Add source and target languages for translation scenarios
-    if scenario_type.startswith("translation"):
-        test_data["source_language"] = scenario_config.get("source_language", "unknown")
-        test_data["target_language"] = scenario_config.get("target_language", "unknown")
-    
-    # Add performance summary if provided
-    if performance_summary:
-        test_data["performance_summary"] = performance_summary
+    # If we have existing results, extend them
+    if existing_results:
+        # Update timestamp to current time
+        timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+        existing_results["timestamp"] = timestamp
+        existing_results["last_updated"] = timestamp
+        
+        # Extend the results list
+        existing_results["results"].extend(results)
+        
+        # Update performance summary if provided
+        if performance_summary:
+            # Combine with existing performance if present
+            if "performance_summary" in existing_results:
+                # Update key metrics
+                old_perf = existing_results["performance_summary"]
+                new_total_scenarios = old_perf.get("total_scenarios_tested", 0) + performance_summary.get("total_scenarios_tested", 0)
+                new_total_test_time = old_perf.get("total_test_time_seconds", 0) + performance_summary.get("total_test_time_seconds", 0)
+                
+                # Calculate new averages
+                performance_summary["total_scenarios_tested"] = new_total_scenarios
+                performance_summary["total_test_time_seconds"] = round(new_total_test_time, 3)
+                
+                if new_total_scenarios > 0:
+                    performance_summary["average_generation_time_seconds"] = round(
+                        (old_perf.get("average_generation_time_seconds", 0) * old_perf.get("total_scenarios_tested", 0) + 
+                         performance_summary.get("average_generation_time_seconds", 0) * performance_summary.get("total_scenarios_tested", 0)) / new_total_scenarios, 3
+                    )
+            
+            existing_results["performance_summary"] = performance_summary
+        
+        test_data = existing_results
+    else:
+        # Create new file structure
+        timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+        test_data = {
+            "model_type": model_type,
+            "scenario_type": scenario_type,
+            "timestamp": timestamp,
+            "test_type": scenario_type,
+            "language": scenario_config.get("language", "unknown"),
+            "results": results
+        }
+        
+        # Add source and target languages for translation scenarios
+        if scenario_type.startswith("translation"):
+            test_data["source_language"] = scenario_config.get("source_language", "unknown")
+            test_data["target_language"] = scenario_config.get("target_language", "unknown")
+        
+        # Add performance summary if provided
+        if performance_summary:
+            test_data["performance_summary"] = performance_summary
     
     # Save to file
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(test_data, f, indent=2, ensure_ascii=False)
     
-    print(f"\nResults saved to: {filepath}")
+    action = "Extended" if existing_results else "Created"
+    print(f"\n{action} results file: {filepath}")
     return filepath
 
 def compare_results():
@@ -487,6 +553,24 @@ def run_single_test(model_type, scenario_type):
     print(f"\n=== {scenario_config['description']} Testing ===")
     print(f"Model: {model_type}")
     print(f"Scenario Type: {scenario_type}")
+    
+    # Load existing results to identify untested scenarios
+    existing_results = load_existing_results(model_type, scenario_type)
+    tested_scenario_ids = get_tested_scenario_ids(existing_results)
+    
+    # Load scenarios
+    print(f"Loading {scenario_type} scenarios...")
+    scenarios_data = load_scenarios(scenario_type)
+    scenarios = scenarios_data['scenarios']
+    
+    # Filter scenarios to only untested ones
+    untested_scenarios = [s for s in scenarios if s['id'] not in tested_scenario_ids]
+    
+    if not untested_scenarios:
+        print(f"All scenarios for {scenario_type} with {model_type} have already been tested!")
+        return []
+    
+    print(f"Found {len(untested_scenarios)} untested scenarios out of {len(scenarios)} total scenarios")
     
     # Check if this is an OpenAI model or local model
     is_openai_model = model_config.get("type") == "openai"
@@ -534,23 +618,16 @@ def run_single_test(model_type, scenario_type):
         )
         model_load_time = time.time() - model_load_start
     
-    # Load scenarios
-    print(f"Loading {scenario_type} scenarios...")
-    scenarios_data = load_scenarios(scenario_type)
-    scenarios = scenarios_data['scenarios']
-    
-    print(f"Found {len(scenarios)} {scenario_type} scenarios")
-    
-    # For quick testing, limit to first 2 scenarios
+    # For quick testing, limit untested scenarios
     if QUICK_TEST:
-        scenarios = scenarios[:2]
-        print(f"Quick test mode: Testing only first {len(scenarios)} scenarios")
+        untested_scenarios = untested_scenarios[:2]
+        print(f"Quick test mode: Testing only first {len(untested_scenarios)} untested scenarios")
     
-    # Test each scenario
+    # Test each untested scenario
     results = []
     total_test_start = time.time()
     
-    for scenario in scenarios:
+    for scenario in untested_scenarios:
         if is_openai_model:
             result = test_scenario_openai(scenario, model_type, scenario_type)
         else:
@@ -581,10 +658,11 @@ def run_single_test(model_type, scenario_type):
     else:
         performance_summary = {}
     
-    # Save results
-    save_results(results, model_type, scenario_type, performance_summary)
+    # Save results (extend existing file)
+    save_results(results, model_type, scenario_type, performance_summary, existing_results)
     
-    print(f"\nCompleted testing {len(results)} scenarios for {model_type} on {scenario_type}")
+    action = "extended" if existing_results else "created"
+    print(f"\nCompleted testing {len(results)} untested scenarios for {model_type} on {scenario_type} - {action} results file")
     
     # Clean up the model to free memory (only for local models)
     if not is_openai_model and llm is not None:
@@ -644,11 +722,12 @@ def run_tests():
     
     print(f"\nQuick Test Mode: {'ON' if QUICK_TEST else 'OFF'}")
     if QUICK_TEST:
-        print("  (Testing only first 2 scenarios per combination)")
+        print("  (Testing only first 2 untested scenarios per combination)")
     
     # Run all combinations
     all_results = []
     failed_combinations = []
+    no_untested_combinations = []
     
     for i, (model_type, scenario_type) in enumerate(combinations, 1):
         print(f"\n{'='*60}")
@@ -657,8 +736,12 @@ def run_tests():
         
         try:
             results = run_single_test(model_type, scenario_type)
-            all_results.append((model_type, scenario_type, results))
-            print(f"✓ Successfully completed {model_type} × {scenario_type}")
+            if results:
+                all_results.append((model_type, scenario_type, results))
+                print(f"✓ Successfully completed {model_type} × {scenario_type} - {len(results)} new scenarios tested")
+            else:
+                no_untested_combinations.append((model_type, scenario_type))
+                print(f"◯ No untested scenarios for {model_type} × {scenario_type}")
         except Exception as e:
             print(f"✗ Failed {model_type} × {scenario_type}: {e}")
             failed_combinations.append((model_type, scenario_type, str(e)))
@@ -668,7 +751,8 @@ def run_tests():
     print(f"TESTING COMPLETE")
     print(f"{'='*60}")
     print(f"Total combinations attempted: {len(combinations)}")
-    print(f"Successful: {len(all_results)}")
+    print(f"New scenarios tested: {len(all_results)}")
+    print(f"Already fully tested: {len(no_untested_combinations)}")
     print(f"Failed: {len(failed_combinations)}")
     
     if failed_combinations:
@@ -676,10 +760,15 @@ def run_tests():
         for model, scenario, error in failed_combinations:
             print(f"  ✗ {model} × {scenario}: {error}")
     
+    if no_untested_combinations:
+        print(f"\nCombinations with all scenarios already tested:")
+        for model, scenario in no_untested_combinations:
+            print(f"  ◯ {model} × {scenario}")
+    
     if all_results:
-        print(f"\nSuccessful combinations:")
+        print(f"\nCombinations with new scenarios tested:")
         for model, scenario, results in all_results:
-            print(f"  ✓ {model} × {scenario}: {len(results)} scenarios tested")
+            print(f"  ✓ {model} × {scenario}: {len(results)} new scenarios tested")
     
     print(f"\nYou can change MODEL_TYPE and SCENARIO_TYPE variables to test different combinations!")
     print(f"Set MODEL_TYPE='all' and SCENARIO_TYPE='all' to test all combinations.")
@@ -696,6 +785,9 @@ if __name__ == "__main__":
     
     print("\nAvailable commands:")
     print("1. Run tests: python test.py")
+    print("   - Only untested scenarios are executed")
+    print("   - Results files are extended, not recreated")
+    print("   - Use QUICK_TEST=True to test only first 2 untested scenarios per combination")
     print("2. Change MODEL_TYPE and SCENARIO_TYPE variables to test different combinations")
     print("3. Set MODEL_TYPE='all' to test all models")
     print("4. Set SCENARIO_TYPE='all' to test all scenarios")

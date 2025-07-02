@@ -399,6 +399,114 @@
       "conversation_history": [],
       "test_prompt": "Available topics: [\"solar photovoltaics\", \"concentrated solar power\", \"wind turbines\", \"offshore wind\", \"hydroelectric power\", \"pumped hydro storage\", \"geothermal energy\", \"biomass energy\", \"biofuels\", \"tidal energy\", \"wave energy\", \"hydrogen fuel cells\", \"battery storage\", \"flywheel storage\", \"compressed air storage\", \"smart grid technology\", \"microgrids\", \"energy efficiency\", \"green buildings\", \"electric vehicles\", \"carbon capture\", \"energy policy\", \"renewable integration\", \"grid stability\", \"energy economics\"]\n\nSentence: \"Engineers are developing advanced systems that can store excess electrical energy by compressing air in underground caverns and releasing it through turbines when demand increases.\"",
       "expected_output": "{\"topic\": \"compressed air storage\", \"confidence\": 93}"
+    },
+    {
+      "id": "topic_detection_en_051",
+      "name": "No Match - Easy (Random Personal Story)",
+      "difficulty": "easy",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"cooking recipes\", \"car maintenance\", \"gardening tips\"]\n\nSentence: \"Yesterday I watched a really funny movie about aliens visiting Earth.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 90}"
+    },
+    {
+      "id": "topic_detection_en_052",
+      "name": "No Match - Easy (Unrelated Question)",
+      "difficulty": "easy",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"sports news\", \"weather forecast\", \"restaurant reviews\"]\n\nSentence: \"What time does the library close on Sundays?\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 85}"
+    },
+    {
+      "id": "topic_detection_en_053",
+      "name": "No Match - Easy (Different Context)",
+      "difficulty": "easy",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"technology news\", \"health advice\", \"travel destinations\"]\n\nSentence: \"My cat likes to sleep in the sunny spot by the window.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 92}"
+    },
+    {
+      "id": "topic_detection_en_054",
+      "name": "No Match - Medium (Business Context)",
+      "difficulty": "medium",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"marketing strategies\", \"financial planning\", \"human resources\", \"supply chain management\"]\n\nSentence: \"The art museum is featuring a special exhibition on Renaissance paintings this month.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 88}"
+    },
+    {
+      "id": "topic_detection_en_055",
+      "name": "No Match - Medium (Academic Context)",
+      "difficulty": "medium",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"molecular biology\", \"organic chemistry\", \"quantum physics\", \"statistical analysis\"]\n\nSentence: \"The local farmer's market has the best fresh strawberries I've ever tasted.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 95}"
+    },
+    {
+      "id": "topic_detection_en_056",
+      "name": "No Match - Medium (Technical Context)",
+      "difficulty": "medium",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"database optimization\", \"network security\", \"cloud computing\", \"machine learning\"]\n\nSentence: \"I'm planning a surprise birthday party for my sister next weekend.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 93}"
+    },
+    {
+      "id": "topic_detection_en_057",
+      "name": "No Match - Hard (Similar Terminology)",
+      "difficulty": "hard",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"cardiac surgery\", \"neurosurgery\", \"orthopedic surgery\", \"plastic surgery\"]\n\nSentence: \"The chef demonstrated precise knife techniques while preparing the elaborate dinner service.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 80}"
+    },
+    {
+      "id": "topic_detection_en_058",
+      "name": "No Match - Hard (Domain Overlap)",
+      "difficulty": "hard",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"software engineering\", \"electrical engineering\", \"mechanical engineering\", \"civil engineering\"]\n\nSentence: \"The orchestra's performance of Beethoven's Symphony No. 9 was absolutely magnificent.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 85}"
+    },
+    {
+      "id": "topic_detection_en_059",
+      "name": "No Match - Hard (Abstract Concepts)",
+      "difficulty": "hard",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"cognitive psychology\", \"behavioral economics\", \"social anthropology\", \"political philosophy\"]\n\nSentence: \"The morning dew glistened on the spider's web like tiny diamonds in the garden.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 90}"
+    },
+    {
+      "id": "topic_detection_en_060",
+      "name": "No Match - Very Hard (Misleading Keywords)",
+      "difficulty": "very hard",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"network protocols\", \"data encryption\", \"firewall configuration\", \"intrusion detection\"]\n\nSentence: \"The detective used sophisticated protocols to detect intrusions into the crime scene and encrypt sensitive evidence data.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 75}"
+    },
+    {
+      "id": "topic_detection_en_061",
+      "name": "No Match - Very Hard (Cross-Domain Terminology)",
+      "difficulty": "very hard",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"gene therapy\", \"immunotherapy\", \"chemotherapy\", \"radiation therapy\"]\n\nSentence: \"The therapist recommended radiation of positive energy and immune-boosting activities to treat the patient's depression through gene expression of happiness.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 70}"
+    },
+    {
+      "id": "topic_detection_en_062",
+      "name": "No Match - Very Hard (Complex Metaphorical Language)",
+      "difficulty": "very hard",
+      "personality": "You are a topic classification system. Given a list of available topics and a sentence, you must identify which topic best matches the sentence. Return your answer in JSON format with two keys: 'topic' (the exact topic string from the list or 'None' if no match) and 'confidence' (a number from 0-100 indicating how certain you are about your choice, where 100 is completely certain and 0 is completely uncertain). The output format should be like this in JSON Format: {\"topic\": \"{detected topic}\", \"confidence\": {confidence score}}. Respond only with the JSON response and nothing else.",
+      "conversation_history": [],
+      "test_prompt": "Available topics: [\"market volatility\", \"risk assessment\", \"portfolio diversification\", \"algorithmic trading\"]\n\nSentence: \"The poet's diverse portfolio of metaphors created volatile emotional markets in the reader's mind, trading algorithmic verses for risky assessments of love.\"",
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 65}"
     }
   ]
 }
