@@ -1,7 +1,7 @@
 {
   "model_type": "llama32-3B",
   "scenario_type": "topic-detection-de",
-  "timestamp": "20250701-164210",
+  "timestamp": "20250702-081635",
   "test_type": "topic-detection-de",
   "language": "de",
   "results": [
@@ -634,16 +634,269 @@
         "words_per_second": 1.12
       },
       "expected_output": "{\"topic\": \"Energiespeicherung\", \"confidence\": 80}"
+    },
+    {
+      "scenario_id": "topic_detection_de_051",
+      "scenario_name": "Keine Übereinstimmung - Einfach (Persönliche Geschichte)",
+      "prompt": "Verfügbare Themen: [\"Kochrezepte\", \"Autowartung\", \"Gartentipps\"]\n\nSatz: \"Gestern habe ich einen wirklich lustigen Film über Außerirdische gesehen, die die Erde besuchen.\"",
+      "response": "{\"topic\": \"Autowartung\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 3.012,
+        "tokens_per_second": 4.98,
+        "time_to_first_token_seconds": 0.301,
+        "prompt_tokens": 256,
+        "completion_tokens": 15,
+        "total_tokens": 271,
+        "response_length_chars": 41,
+        "response_length_words": 4,
+        "chars_per_second": 13.61,
+        "words_per_second": 1.33
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 90}"
+    },
+    {
+      "scenario_id": "topic_detection_de_052",
+      "scenario_name": "Keine Übereinstimmung - Einfach (Unzusammenhängende Frage)",
+      "prompt": "Verfügbare Themen: [\"Sportnachrichten\", \"Wettervorhersage\", \"Restaurantbewertungen\"]\n\nSatz: \"Wann schließt die Bibliothek sonntags?\"",
+      "response": "{\"topic\": \"None\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.072,
+        "tokens_per_second": 11.19,
+        "time_to_first_token_seconds": 0.107,
+        "prompt_tokens": 245,
+        "completion_tokens": 12,
+        "total_tokens": 257,
+        "response_length_chars": 34,
+        "response_length_words": 4,
+        "chars_per_second": 31.71,
+        "words_per_second": 3.73
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 85}"
+    },
+    {
+      "scenario_id": "topic_detection_de_053",
+      "scenario_name": "Keine Übereinstimmung - Einfach (Anderer Kontext)",
+      "prompt": "Verfügbare Themen: [\"Technologie-News\", \"Gesundheitstipps\", \"Reiseziele\"]\n\nSatz: \"Meine Katze schläft gerne im sonnigen Platz am Fenster.\"",
+      "response": "{\"topic\": \"None\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.12,
+        "tokens_per_second": 10.72,
+        "time_to_first_token_seconds": 0.112,
+        "prompt_tokens": 249,
+        "completion_tokens": 12,
+        "total_tokens": 261,
+        "response_length_chars": 34,
+        "response_length_words": 4,
+        "chars_per_second": 30.37,
+        "words_per_second": 3.57
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 92}"
+    },
+    {
+      "scenario_id": "topic_detection_de_054",
+      "scenario_name": "Keine Übereinstimmung - Mittel (Geschäftskontext)",
+      "prompt": "Verfügbare Themen: [\"Marketing-Strategien\", \"Finanzplanung\", \"Personalwesen\", \"Lieferkettenmanagement\"]\n\nSatz: \"Das Kunstmuseum zeigt diesen Monat eine Sonderausstellung über Renaissance-Gemälde.\"",
+      "response": "{\"topic\": \"Marketing-Strategien\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.482,
+        "tokens_per_second": 10.8,
+        "time_to_first_token_seconds": 0.148,
+        "prompt_tokens": 256,
+        "completion_tokens": 16,
+        "total_tokens": 272,
+        "response_length_chars": 50,
+        "response_length_words": 4,
+        "chars_per_second": 33.75,
+        "words_per_second": 2.7
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 88}"
+    },
+    {
+      "scenario_id": "topic_detection_de_055",
+      "scenario_name": "Keine Übereinstimmung - Mittel (Akademischer Kontext)",
+      "prompt": "Verfügbare Themen: [\"Molekularbiologie\", \"Organische Chemie\", \"Quantenphysik\", \"Statistische Analyse\"]\n\nSatz: \"Der örtliche Bauernmarkt hat die besten frischen Erdbeeren, die ich je probiert habe.\"",
+      "response": "{\"topic\": \"Organische Chemie\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.365,
+        "tokens_per_second": 10.99,
+        "time_to_first_token_seconds": 0.137,
+        "prompt_tokens": 260,
+        "completion_tokens": 15,
+        "total_tokens": 275,
+        "response_length_chars": 47,
+        "response_length_words": 5,
+        "chars_per_second": 34.42,
+        "words_per_second": 3.66
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 95}"
+    },
+    {
+      "scenario_id": "topic_detection_de_056",
+      "scenario_name": "Keine Übereinstimmung - Mittel (Technischer Kontext)",
+      "prompt": "Verfügbare Themen: [\"Datenbankoptimierung\", \"Netzwerksicherheit\", \"Cloud-Computing\", \"Maschinelles Lernen\"]\n\nSatz: \"Ich plane eine Überraschungsgeburtstagsfeier für meine Schwester nächstes Wochenende.\"",
+      "response": "{\"topic\": \"None\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.288,
+        "tokens_per_second": 9.32,
+        "time_to_first_token_seconds": 0.129,
+        "prompt_tokens": 264,
+        "completion_tokens": 12,
+        "total_tokens": 276,
+        "response_length_chars": 34,
+        "response_length_words": 4,
+        "chars_per_second": 26.39,
+        "words_per_second": 3.11
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 93}"
+    },
+    {
+      "scenario_id": "topic_detection_de_057",
+      "scenario_name": "Keine Übereinstimmung - Schwer (Ähnliche Terminologie)",
+      "prompt": "Verfügbare Themen: [\"Herzchirurgie\", \"Neurochirurgie\", \"Orthopädische Chirurgie\", \"Plastische Chirurgie\"]\n\nSatz: \"Der Küchenchef demonstrierte präzise Schneidetechniken bei der Zubereitung des aufwendigen Abendservices.\"",
+      "response": "{\"topic\": \"None\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.388,
+        "tokens_per_second": 8.65,
+        "time_to_first_token_seconds": 0.139,
+        "prompt_tokens": 277,
+        "completion_tokens": 12,
+        "total_tokens": 289,
+        "response_length_chars": 34,
+        "response_length_words": 4,
+        "chars_per_second": 24.5,
+        "words_per_second": 2.88
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 80}"
+    },
+    {
+      "scenario_id": "topic_detection_de_058",
+      "scenario_name": "Keine Übereinstimmung - Schwer (Domänen-Überschneidung)",
+      "prompt": "Verfügbare Themen: [\"Software-Engineering\", \"Elektrotechnik\", \"Maschinenbau\", \"Bauingenieurwesen\"]\n\nSatz: \"Die Aufführung des Orchesters von Beethovens 9. Symphonie war absolut großartig.\"",
+      "response": "{\"topic\": \"Elektrotechnik\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.466,
+        "tokens_per_second": 10.92,
+        "time_to_first_token_seconds": 0.147,
+        "prompt_tokens": 262,
+        "completion_tokens": 16,
+        "total_tokens": 278,
+        "response_length_chars": 44,
+        "response_length_words": 4,
+        "chars_per_second": 30.02,
+        "words_per_second": 2.73
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 85}"
+    },
+    {
+      "scenario_id": "topic_detection_de_059",
+      "scenario_name": "Keine Übereinstimmung - Schwer (Abstrakte Konzepte)",
+      "prompt": "Verfügbare Themen: [\"Kognitive Psychologie\", \"Verhaltensökonomie\", \"Sozialanthropologie\", \"Politische Philosophie\"]\n\nSatz: \"Der Morgentau glitzerte auf dem Spinnennetz wie winzige Diamanten im Garten.\"",
+      "response": "{\"topic\": \"Kognitive Psychologie\", \"confidence\": 0}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.385,
+        "tokens_per_second": 10.83,
+        "time_to_first_token_seconds": 0.138,
+        "prompt_tokens": 261,
+        "completion_tokens": 15,
+        "total_tokens": 276,
+        "response_length_chars": 51,
+        "response_length_words": 5,
+        "chars_per_second": 36.83,
+        "words_per_second": 3.61
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 90}"
+    },
+    {
+      "scenario_id": "topic_detection_de_060",
+      "scenario_name": "Keine Übereinstimmung - Sehr Schwer (Irreführende Schlüsselwörter)",
+      "prompt": "Verfügbare Themen: [\"Netzwerkprotokolle\", \"Datenverschlüsselung\", \"Firewall-Konfiguration\", \"Intrusion Detection\"]\n\nSatz: \"Der Detektiv verwendete ausgeklügelte Protokolle, um Einbrüche am Tatort zu erkennen und sensible Beweis-Daten zu verschlüsseln.\"",
+      "response": "{\"topic\": \"Netzwerkprotokolle\", \"confidence\": 90}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.676,
+        "tokens_per_second": 10.14,
+        "time_to_first_token_seconds": 0.168,
+        "prompt_tokens": 281,
+        "completion_tokens": 17,
+        "total_tokens": 298,
+        "response_length_chars": 49,
+        "response_length_words": 4,
+        "chars_per_second": 29.24,
+        "words_per_second": 2.39
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 75}"
+    },
+    {
+      "scenario_id": "topic_detection_de_061",
+      "scenario_name": "Keine Übereinstimmung - Sehr Schwer (Domänen-übergreifende Terminologie)",
+      "prompt": "Verfügbare Themen: [\"Gentherapie\", \"Immuntherapie\", \"Chemotherapie\", \"Strahlentherapie\"]\n\nSatz: \"Der Therapeut empfahl eine Ausstrahlung positiver Energie und immunstärkende Aktivitäten zur Behandlung der Depression des Patienten durch Gen-Expression des Glücks.\"",
+      "response": "{\"topic\": \"Immuntherapie\", \"confidence\": 87}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.674,
+        "tokens_per_second": 9.56,
+        "time_to_first_token_seconds": 0.167,
+        "prompt_tokens": 282,
+        "completion_tokens": 16,
+        "total_tokens": 298,
+        "response_length_chars": 44,
+        "response_length_words": 4,
+        "chars_per_second": 26.28,
+        "words_per_second": 2.39
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 70}"
+    },
+    {
+      "scenario_id": "topic_detection_de_062",
+      "scenario_name": "Keine Übereinstimmung - Sehr Schwer (Komplexe Metaphorische Sprache)",
+      "prompt": "Verfügbare Themen: [\"Marktvolatilität\", \"Risikobewertung\", \"Portfolio-Diversifikation\", \"Algorithmischer Handel\"]\n\nSatz: \"Das diversifizierte Portfolio von Metaphern des Dichters schuf volatile emotionale Märkte im Geist des Lesers und handelte algorithmische Verse gegen riskante Bewertungen der Liebe.\"",
+      "response": "{\"topic\": \"Portfolio-Diversifikation\", \"confidence\": 60}",
+      "personality": "Sie sind ein Themenklassifikationssystem. Gegeben eine Liste verfügbarer Themen und einen Satz, müssen Sie identifizieren, welches Thema am besten zum Satz passt. Geben Sie Ihre Antwort im JSON-Format mit zwei Schlüsseln zurück: 'topic' (die exakte Themen-Zeichenkette aus der Liste oder 'None' falls keine Übereinstimmung) und 'confidence' (eine Zahl von 0-100, die angibt, wie sicher Sie sich bei Ihrer Wahl sind, wobei 100 völlig sicher und 0 völlig unsicher bedeutet). Das Ausgabeformat sollte so aussehen im JSON-Format: {\"topic\": \"{erkanntes Thema}\", \"confidence\": {Vertrauenswert}}. Antworten Sie nur mit der JSON-Antwort und sonst nichts.",
+      "conversation_history": [],
+      "performance": {
+        "generation_time_seconds": 1.603,
+        "tokens_per_second": 9.98,
+        "time_to_first_token_seconds": 0.16,
+        "prompt_tokens": 283,
+        "completion_tokens": 16,
+        "total_tokens": 299,
+        "response_length_chars": 56,
+        "response_length_words": 4,
+        "chars_per_second": 34.94,
+        "words_per_second": 2.5
+      },
+      "expected_output": "{\"topic\": \"None\", \"confidence\": 65}"
     }
   ],
   "performance_summary": {
-    "model_download_time_seconds": 0.104,
-    "model_load_time_seconds": 2.031,
-    "total_test_time_seconds": 88.659,
-    "total_scenarios_tested": 30,
-    "average_generation_time_seconds": 2.955,
-    "average_tokens_per_second": 5.87,
-    "total_tokens_generated": 12328,
-    "total_generation_time_seconds": 88.659
-  }
+    "model_download_time_seconds": 0.124,
+    "model_load_time_seconds": 2.004,
+    "total_test_time_seconds": 107.19,
+    "total_scenarios_tested": 42,
+    "average_generation_time_seconds": 3.655,
+    "average_tokens_per_second": 9.84,
+    "total_tokens_generated": 3350,
+    "total_generation_time_seconds": 18.531
+  },
+  "last_updated": "20250702-081635"
 }
